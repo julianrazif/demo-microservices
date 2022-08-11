@@ -7,8 +7,26 @@ spring:
   config:
     activate:
       on-profile: dev
+kafka-config:
+  bootstrap-servers: localhost:19092,localhost:29092,localhost:39092
+  client-id: JULIAN_DEV_API
+  group-id: API_JULIAN_DEV
+  enable-auto-commit: false
+  auto-offset-reset: latest
+  batch-listener: true
+  auto-startup: false
+  concurrency-level: 5
+  session-timeout-ms: 10000
+  heartbeat-interval-ms: 3000
+  max-poll-interval-ms: 300000
+  max-poll-records: 500
+  max-partition-fetch-bytes-default: 1048576
+  max-partition-fetch-bytes-boost-factor: 1
+  poll-timeout-ms: 150
+  dss-api-topic: stream_dss-reqreply_api
+  api-dss-topic: reqreply_api-stream_dss
 server:
   port: 8082
 logging:
   level:
-    org.springframework: TRACE
+    org.springframework: INFO

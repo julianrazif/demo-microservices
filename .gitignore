@@ -38,3 +38,4 @@ build/
 /docker/redis-sentinel/redis-master-sentinel/
 /docker/redis-sentinel/redis-slave1-sentinel/
 /docker/redis-sentinel/redis-slave2-sentinel/
+/docker/docker-logs/
