@@ -12,7 +12,7 @@ services:
     container_name: redis-master-sentinel
     restart: always
     ports:
-      - "6379"
+      - "6379:6379"
     volumes:
       - "./conf/master.conf:/opt/bitnami/redis/mounted-etc/redis.conf"
       - "./redis-master-sentinel:/bitnami/redis/data"
@@ -36,7 +36,7 @@ services:
     depends_on:
       - redis-master-sentinel
     ports:
-      - "6379"
+      - "6380:6379"
     volumes:
       - "./conf/slave.conf:/opt/bitnami/redis/mounted-etc/redis.conf"
       - "./redis-slave1-sentinel:/bitnami/redis/data"
@@ -62,7 +62,7 @@ services:
     depends_on:
       - redis-master-sentinel
     ports:
-      - "6379"
+      - "6381:6379"
     volumes:
       - "./conf/slave.conf:/opt/bitnami/redis/mounted-etc/redis.conf"
       - "./redis-slave2-sentinel:/bitnami/redis/data"
@@ -73,6 +73,90 @@ services:
       - "REDIS_MASTER_HOST=redis-master-sentinel"
       - "REDIS_MASTER_PASSWORD=julianraziffigaro"
       - "REDIS_PASSWORD=julianraziffigaro"
+    sysctls:
+      - "net.ipv4.tcp_max_syn_backlog=65535"
+      - "net.core.somaxconn=65535"
+    networks:
+      - back-tier
+
+  redis-sentinel1:
+    build:
+      context: ./sentinel
+    hostname: redis-sentinel1
+    container_name: redis-sentinel1
+    restart: always
+    depends_on:
+      - redis-master-sentinel
+      - redis-slave1-sentinel
+      - redis-slave2-sentinel
+    ports:
+      - "26379:26379"
+    user: root
+    environment:
+      - "REDIS_MASTER_HOST=redis-master-sentinel"
+      - "REDIS_MASTER_PORT_NUMBER=6379"
+      - "REDIS_MASTER_SET=mymaster"
+      - "REDIS_SENTINEL_PORT_NUMBER=26379"
+      - "REDIS_MASTER_PASSWORD=julianraziffigaro"
+      - "REDIS_SENTINEL_QUORUM=2"
+      - "REDIS_SENTINEL_DOWN_AFTER_MILLISECONDS=200"
+      - "REDIS_SENTINEL_FAILOVER_TIMEOUT=500"
+    sysctls:
+      - "net.ipv4.tcp_max_syn_backlog=65535"
+      - "net.core.somaxconn=65535"
+    networks:
+      - back-tier
+
+  redis-sentinel2:
+    build:
+      context: ./sentinel
+    hostname: redis-sentinel2
+    container_name: redis-sentinel2
+    restart: always
+    depends_on:
+      - redis-master-sentinel
+      - redis-slave1-sentinel
+      - redis-slave2-sentinel
+    ports:
+      - "26380:26379"
+    user: root
+    environment:
+      - "REDIS_MASTER_HOST=redis-master-sentinel"
+      - "REDIS_MASTER_PORT_NUMBER=6379"
+      - "REDIS_MASTER_SET=mymaster"
+      - "REDIS_SENTINEL_PORT_NUMBER=26379"
+      - "REDIS_MASTER_PASSWORD=julianraziffigaro"
+      - "REDIS_SENTINEL_QUORUM=2"
+      - "REDIS_SENTINEL_DOWN_AFTER_MILLISECONDS=200"
+      - "REDIS_SENTINEL_FAILOVER_TIMEOUT=500"
+    sysctls:
+      - "net.ipv4.tcp_max_syn_backlog=65535"
+      - "net.core.somaxconn=65535"
+    networks:
+      - back-tier
+
+  redis-sentinel3:
+    build:
+      context: ./sentinel
+    hostname: redis-sentinel3
+    container_name: redis-sentinel3
+    restart: always
+    depends_on:
+      - redis-master-sentinel
+      - redis-slave1-sentinel
+      - redis-slave2-sentinel
+    ports:
+      - "26381:26379"
+    user: root
+    environment:
+      - "REDIS_MASTER_HOST=redis-master-sentinel"
+      - "REDIS_MASTER_PORT_NUMBER=6379"
+      - "REDIS_MASTER_SET=mymaster"
+      - "REDIS_SENTINEL_PORT_NUMBER=26379"
+      - "REDIS_MASTER_PASSWORD=julianraziffigaro"
+      - "REDIS_SENTINEL_QUORUM=2"
+      - "REDIS_SENTINEL_DOWN_AFTER_MILLISECONDS=200"
+      - "REDIS_SENTINEL_FAILOVER_TIMEOUT=500"
     sysctls:
       - "net.ipv4.tcp_max_syn_backlog=65535"
       - "net.core.somaxconn=65535"
