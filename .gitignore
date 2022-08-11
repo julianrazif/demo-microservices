@@ -32,3 +32,9 @@ build/
 ### VS Code ###
 .vscode/
 /.mvn/
+/docker/redis-sentinel/.log_redis-master-sentinel/
+/docker/redis-sentinel/.log_redis-slave1-sentinel/
+/docker/redis-sentinel/.log_redis-slave2-sentinel/
+/docker/redis-sentinel/redis-master-sentinel/
+/docker/redis-sentinel/redis-slave1-sentinel/
+/docker/redis-sentinel/redis-slave2-sentinel/
