@@ -1,4 +1,5 @@
-version: '3.7'
+version: '3.8'
+
 services:
   dss:
     image: ${GROUP_ID}/dss:${SERVICE_VERSION:-latest}
