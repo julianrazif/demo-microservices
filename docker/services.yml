@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  dss:
+    image: ${GROUP_ID}/dss:${SERVICE_VERSION:-latest}
+    hostname: dss
+    container_name: dss
+    depends_on:
+      - zookeeper
+      - kafka-broker-1
+      - kafka-broker-2
+      - kafka-broker-3
+      - kafdrop
+    ports:
+      - "8081:8081"
+    volumes:
+      - "./docker-logs:/workspace/dss/logs"
+    user: root
+    environment:
+      - "SERVER_PORT=8081"
+    networks:
+      - ${GLOBAL_NETWORK:-services}
