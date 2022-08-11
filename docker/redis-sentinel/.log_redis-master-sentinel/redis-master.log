@@ -1548,3 +1548,119 @@
 1:M 11 Aug 2022 12:27:51.745 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
 1:M 11 Aug 2022 12:27:51.801 * Background RDB transfer terminated with success
 1:M 11 Aug 2022 12:27:52.706 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:S 11 Aug 2022 13:10:36.556 . 9 clients connected (0 replicas), 5004488 bytes in use
+1:S 11 Aug 2022 13:10:38.453 * Full resync from master: 2ddd6d50de877cb06cf3c11006fe845025214ad5:150720
+1:S 11 Aug 2022 13:10:38.457 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 13:10:38.459 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 13:10:38.460 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 13:10:38.466 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 13:10:38.468 * Reconnecting to MASTER 172.23.0.3:6379 after failure
+1:S 11 Aug 2022 13:10:38.469 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 13:10:38.471 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 13:10:38.474 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 13:10:38.476 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 13:10:41.594 . 9 clients connected (0 replicas), 5004488 bytes in use
+1:S 11 Aug 2022 13:10:43.500 * Full resync from master: 2ddd6d50de877cb06cf3c11006fe845025214ad5:151837
+1:S 11 Aug 2022 13:10:43.503 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 13:10:43.505 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 13:10:43.506 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 13:10:43.513 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 13:10:43.515 * Reconnecting to MASTER 172.23.0.3:6379 after failure
+1:S 11 Aug 2022 13:10:43.517 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 13:10:43.518 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 13:10:43.521 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 13:10:43.522 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 13:10:46.639 . 9 clients connected (0 replicas), 5004488 bytes in use
+1:S 11 Aug 2022 13:10:48.542 * Full resync from master: 2ddd6d50de877cb06cf3c11006fe845025214ad5:152805
+1:S 11 Aug 2022 13:10:48.544 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 13:10:48.547 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 13:10:48.548 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 13:10:48.555 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 13:10:48.557 * Reconnecting to MASTER 172.23.0.3:6379 after failure
+1:S 11 Aug 2022 13:10:48.558 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 13:10:48.559 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 13:10:48.562 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 13:10:48.563 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 13:10:50.070 - Closing idle client
+1:S 11 Aug 2022 13:10:50.582 - Accepted 172.23.0.1:37188
+1:S 11 Aug 2022 13:10:51.685 . 9 clients connected (0 replicas), 5024960 bytes in use
+1:S 11 Aug 2022 13:10:53.581 * Full resync from master: 2ddd6d50de877cb06cf3c11006fe845025214ad5:153922
+1:S 11 Aug 2022 13:10:53.585 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 13:10:53.587 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 13:10:53.588 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 13:10:53.594 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 13:10:53.596 * Reconnecting to MASTER 172.23.0.3:6379 after failure
+1:S 11 Aug 2022 13:10:53.597 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 13:10:53.598 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 13:10:53.602 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 13:10:53.603 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 13:10:56.717 . 9 clients connected (0 replicas), 5004488 bytes in use
+1:S 11 Aug 2022 13:10:57.120 - Closing idle client
+1:S 11 Aug 2022 13:10:57.637 - Accepted 172.23.0.1:37246
+1:S 11 Aug 2022 13:10:58.617 * Full resync from master: 2ddd6d50de877cb06cf3c11006fe845025214ad5:154890
+1:S 11 Aug 2022 13:10:58.620 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 13:10:58.622 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 13:10:58.623 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 13:10:58.640 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 13:10:58.643 * Reconnecting to MASTER 172.23.0.3:6379 after failure
+1:S 11 Aug 2022 13:10:58.644 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 13:10:58.646 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 13:10:58.648 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 13:10:58.650 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 13:11:01.766 . 9 clients connected (0 replicas), 5004488 bytes in use
+1:S 11 Aug 2022 13:11:03.657 * Full resync from master: 2ddd6d50de877cb06cf3c11006fe845025214ad5:156007
+1:S 11 Aug 2022 13:11:03.660 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 13:11:03.661 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 13:11:03.663 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 13:11:03.669 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 13:11:03.671 * Reconnecting to MASTER 172.23.0.3:6379 after failure
+1:S 11 Aug 2022 13:11:03.673 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 13:11:03.675 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 13:11:03.677 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 13:11:03.678 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 13:11:06.799 . 9 clients connected (0 replicas), 5004488 bytes in use
+1:S 11 Aug 2022 13:11:08.697 * Full resync from master: 2ddd6d50de877cb06cf3c11006fe845025214ad5:156840
+1:S 11 Aug 2022 13:11:08.700 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 13:11:08.702 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 13:11:08.703 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 13:11:08.710 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 13:11:08.712 * Reconnecting to MASTER 172.23.0.3:6379 after failure
+1:S 11 Aug 2022 13:11:08.713 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 13:11:08.715 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 13:11:08.717 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 13:11:08.719 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 13:11:11.838 . 9 clients connected (0 replicas), 5004488 bytes in use
+1:S 11 Aug 2022 13:11:13.737 * Full resync from master: 2ddd6d50de877cb06cf3c11006fe845025214ad5:158092
+1:S 11 Aug 2022 13:11:13.740 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 13:11:13.742 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 13:11:13.744 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 13:11:13.750 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 13:11:13.752 * Reconnecting to MASTER 172.23.0.3:6379 after failure
+1:S 11 Aug 2022 13:11:13.754 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 13:11:13.755 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 13:11:13.759 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 13:11:13.760 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 13:11:16.876 . 9 clients connected (0 replicas), 5004488 bytes in use
+1:S 11 Aug 2022 13:11:18.778 * Full resync from master: 2ddd6d50de877cb06cf3c11006fe845025214ad5:158925
+1:S 11 Aug 2022 13:11:18.781 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 13:11:18.783 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 13:11:18.784 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 13:11:18.789 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 13:11:18.791 * Reconnecting to MASTER 172.23.0.3:6379 after failure
+1:S 11 Aug 2022 13:11:18.792 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 13:11:18.794 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 13:11:18.797 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 13:11:18.799 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 13:11:21.008 - Closing idle client
+1:S 11 Aug 2022 13:11:21.519 - Accepted 172.23.0.1:37452
+1:S 11 Aug 2022 13:11:21.917 . 9 clients connected (0 replicas), 5024960 bytes in use
+1:S 11 Aug 2022 13:11:23.817 * Full resync from master: 2ddd6d50de877cb06cf3c11006fe845025214ad5:160177
+1:S 11 Aug 2022 13:11:23.820 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 13:11:23.821 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 13:11:23.822 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 13:11:23.829 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 13:11:23.831 * Reconnecting to MASTER 172.23.0.3:6379 after failure
+1:S 11 Aug 2022 13:11:23.833 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 13:11:23.834 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 13:11:23.838 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 13:11:23.840 * Partial resynchronization not possible (no cached master)
