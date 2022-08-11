@@ -11,4 +11,4 @@ server:
   port: 8081
 logging:
   level:
-    org.springframework: TRACE
+    org.springframework: INFO
