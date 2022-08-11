@@ -3,6 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <modules>
+        <module>dss</module>
+    </modules>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -26,6 +30,14 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- Local Modules -->
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>dss</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- Dependencies -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-actuator</artifactId>
