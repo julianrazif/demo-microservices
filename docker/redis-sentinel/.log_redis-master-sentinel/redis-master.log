@@ -1,0 +1,1550 @@
+1:C 11 Aug 2022 12:20:44.624 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 11 Aug 2022 12:20:44.626 # Redis version=7.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 11 Aug 2022 12:20:44.627 # Configuration loaded
+1:M 11 Aug 2022 12:20:44.629 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 7.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 11 Aug 2022 12:20:44.633 # Server initialized
+1:M 11 Aug 2022 12:20:44.636 . The AOF directory appendonlydir doesn't exist
+1:M 11 Aug 2022 12:20:44.642 * Creating AOF base file appendonly.aof.1.base.aof on server start
+1:M 11 Aug 2022 12:20:44.651 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+1:M 11 Aug 2022 12:20:44.652 * Ready to accept connections
+1:M 11 Aug 2022 12:20:44.654 . 0 clients connected (0 replicas), 4517112 bytes in use
+1:M 11 Aug 2022 12:20:46.636 - Accepted 172.22.0.3:47114
+1:M 11 Aug 2022 12:20:46.644 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:20:46.647 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:20:46.649 * Replication backlog created, my new replication IDs are 'bb2b2418be6fdd382e873470e5e50d2aec8b469e' and '0000000000000000000000000000000000000000'
+1:M 11 Aug 2022 12:20:46.650 * Delay next BGSAVE for diskless SYNC
+1:M 11 Aug 2022 12:20:46.909 - Accepted 172.22.0.4:37792
+1:M 11 Aug 2022 12:20:46.920 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:20:46.923 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:20:46.926 * Delay next BGSAVE for diskless SYNC
+1:M 11 Aug 2022 12:20:49.679 . 0 clients connected (2 replicas), 4595808 bytes in use
+1:M 11 Aug 2022 12:20:51.692 * Starting BGSAVE for SYNC with target: replicas sockets
+65:C 11 Aug 2022 12:20:51.696 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:20:51.696 * Background RDB transfer started by pid 65
+1:M 11 Aug 2022 12:20:51.700 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:20:51.718 - Client closed connection id=4 addr=172.22.0.4:37792 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:20:51.720 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:20:51.723 - Client closed connection id=3 addr=172.22.0.3:47114 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:20:51.725 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:20:51.728 - Accepted 172.22.0.4:37830
+1:M 11 Aug 2022 12:20:51.731 - Accepted 172.22.0.3:47158
+1:M 11 Aug 2022 12:20:51.738 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:20:51.740 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:20:51.743 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:20:51.745 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:20:51.747 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:20:51.749 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:20:51.800 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:20:54.716 . 0 clients connected (2 replicas), 4595808 bytes in use
+1:M 11 Aug 2022 12:20:56.730 * Starting BGSAVE for SYNC with target: replicas sockets
+66:C 11 Aug 2022 12:20:56.733 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:20:56.733 * Background RDB transfer started by pid 66
+1:M 11 Aug 2022 12:20:56.736 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:20:56.789 - Client closed connection id=5 addr=172.22.0.4:37830 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:20:56.791 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:20:56.793 - Client closed connection id=6 addr=172.22.0.3:47158 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:20:56.796 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:20:56.797 - Accepted 172.22.0.4:37874
+1:M 11 Aug 2022 12:20:56.799 - Accepted 172.22.0.3:47202
+1:M 11 Aug 2022 12:20:56.804 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:20:56.806 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:20:56.808 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:20:56.810 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:20:56.812 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:20:56.814 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:20:56.838 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:20:59.757 . 0 clients connected (2 replicas), 4616312 bytes in use
+1:M 11 Aug 2022 12:21:01.771 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:21:01.775 * Background RDB transfer started by pid 67
+67:C 11 Aug 2022 12:21:01.775 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:21:01.778 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:21:01.835 - Client closed connection id=7 addr=172.22.0.4:37874 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:01.838 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:21:01.840 - Client closed connection id=8 addr=172.22.0.3:47202 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:01.843 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:21:01.845 - Accepted 172.22.0.4:37914
+1:M 11 Aug 2022 12:21:01.847 - Accepted 172.22.0.3:47242
+1:M 11 Aug 2022 12:21:01.854 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:01.856 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:21:01.859 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:01.861 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:01.863 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:21:01.865 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:01.880 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:21:04.798 . 0 clients connected (2 replicas), 4616312 bytes in use
+1:M 11 Aug 2022 12:21:06.810 * Starting BGSAVE for SYNC with target: replicas sockets
+68:C 11 Aug 2022 12:21:06.814 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:21:06.814 * Background RDB transfer started by pid 68
+1:M 11 Aug 2022 12:21:06.818 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:21:06.876 - Client closed connection id=10 addr=172.22.0.3:47242 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:06.879 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:21:06.881 - Client closed connection id=9 addr=172.22.0.4:37914 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:06.884 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:21:06.885 - Accepted 172.22.0.3:47286
+1:M 11 Aug 2022 12:21:06.887 - Accepted 172.22.0.4:37962
+1:M 11 Aug 2022 12:21:06.894 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:06.895 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:21:06.896 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:06.898 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:06.900 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:21:06.902 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:06.919 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:21:09.837 . 0 clients connected (2 replicas), 4616312 bytes in use
+1:M 11 Aug 2022 12:21:11.851 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:21:11.855 * Background RDB transfer started by pid 69
+69:C 11 Aug 2022 12:21:11.855 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:21:11.858 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:21:11.914 - Client closed connection id=12 addr=172.22.0.4:37962 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:11.917 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:21:11.919 - Client closed connection id=11 addr=172.22.0.3:47286 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:11.921 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:21:11.924 - Accepted 172.22.0.4:38000
+1:M 11 Aug 2022 12:21:11.926 - Accepted 172.22.0.3:47328
+1:M 11 Aug 2022 12:21:11.934 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:11.937 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:21:11.939 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:11.941 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:11.943 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:21:11.946 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:11.959 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:21:14.878 . 0 clients connected (2 replicas), 4616312 bytes in use
+1:M 11 Aug 2022 12:21:16.892 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:21:16.896 * Background RDB transfer started by pid 70
+70:C 11 Aug 2022 12:21:16.896 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:21:16.899 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:21:16.956 - Client closed connection id=13 addr=172.22.0.4:38000 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:16.959 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:21:16.961 - Client closed connection id=14 addr=172.22.0.3:47328 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:16.964 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:21:16.966 - Accepted 172.22.0.4:38044
+1:M 11 Aug 2022 12:21:16.968 - Accepted 172.22.0.3:47372
+1:M 11 Aug 2022 12:21:16.975 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:16.977 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:21:16.979 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:16.981 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:16.984 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:21:16.986 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:17.001 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:21:19.915 . 0 clients connected (2 replicas), 4616312 bytes in use
+1:M 11 Aug 2022 12:21:21.926 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:21:21.929 * Background RDB transfer started by pid 71
+71:C 11 Aug 2022 12:21:21.930 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:21:21.934 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:21:21.952 - Client closed connection id=16 addr=172.22.0.3:47372 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:21.955 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:21:21.957 - Client closed connection id=15 addr=172.22.0.4:38044 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:21.960 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:21:21.962 - Accepted 172.22.0.3:47410
+1:M 11 Aug 2022 12:21:21.965 - Accepted 172.22.0.4:38086
+1:M 11 Aug 2022 12:21:21.972 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:21.974 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:21:21.976 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:21.978 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:21.980 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:21:21.981 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:22.033 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:21:24.948 . 0 clients connected (2 replicas), 4616312 bytes in use
+1:M 11 Aug 2022 12:21:26.958 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:21:26.961 * Background RDB transfer started by pid 72
+72:C 11 Aug 2022 12:21:26.961 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:21:26.963 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:21:27.016 - Client closed connection id=18 addr=172.22.0.4:38086 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:27.019 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:21:27.021 - Client closed connection id=17 addr=172.22.0.3:47410 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:27.023 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:21:27.025 - Accepted 172.22.0.4:38128
+1:M 11 Aug 2022 12:21:27.026 - Accepted 172.22.0.3:47456
+1:M 11 Aug 2022 12:21:27.032 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:27.033 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:21:27.035 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:27.036 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:27.038 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:21:27.039 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:27.064 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:21:29.982 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:21:33.000 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:21:33.003 * Background RDB transfer started by pid 73
+73:C 11 Aug 2022 12:21:33.003 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:21:33.005 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:21:33.059 - Client closed connection id=19 addr=172.22.0.4:38128 laddr=172.22.0.2:6379 fd=8 name= age=6 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:33.061 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:21:33.063 - Client closed connection id=20 addr=172.22.0.3:47456 laddr=172.22.0.2:6379 fd=9 name= age=6 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:33.065 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:21:33.067 - Accepted 172.22.0.4:38174
+1:M 11 Aug 2022 12:21:33.069 - Accepted 172.22.0.3:47502
+1:M 11 Aug 2022 12:21:33.074 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:33.076 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:21:33.077 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:33.078 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:33.080 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:21:33.082 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:33.106 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:21:35.015 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:21:38.030 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:21:38.034 * Background RDB transfer started by pid 74
+74:C 11 Aug 2022 12:21:38.034 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:21:38.038 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:21:38.057 - Client closed connection id=22 addr=172.22.0.3:47502 laddr=172.22.0.2:6379 fd=9 name= age=6 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:38.061 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:21:38.065 - Client closed connection id=21 addr=172.22.0.4:38174 laddr=172.22.0.2:6379 fd=8 name= age=6 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:38.069 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:21:38.071 - Accepted 172.22.0.3:47546
+1:M 11 Aug 2022 12:21:38.072 - Accepted 172.22.0.4:38222
+1:M 11 Aug 2022 12:21:38.079 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:38.081 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:21:38.083 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:38.084 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:38.086 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:21:38.088 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:38.138 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:21:40.049 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:21:43.065 * Starting BGSAVE for SYNC with target: replicas sockets
+75:C 11 Aug 2022 12:21:43.068 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:21:43.068 * Background RDB transfer started by pid 75
+1:M 11 Aug 2022 12:21:43.071 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:21:43.126 - Client closed connection id=24 addr=172.22.0.4:38222 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:43.128 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:21:43.132 - Client closed connection id=23 addr=172.22.0.3:47546 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:43.135 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:21:43.137 - Accepted 172.22.0.4:38262
+1:M 11 Aug 2022 12:21:43.138 - Accepted 172.22.0.3:47590
+1:M 11 Aug 2022 12:21:43.144 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:43.146 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:21:43.147 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:43.148 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:43.150 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:21:43.151 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:43.171 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:21:45.082 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:21:48.102 * Starting BGSAVE for SYNC with target: replicas sockets
+76:C 11 Aug 2022 12:21:48.105 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:21:48.106 * Background RDB transfer started by pid 76
+1:M 11 Aug 2022 12:21:48.108 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:21:48.163 - Client closed connection id=25 addr=172.22.0.4:38262 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:48.165 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:21:48.168 - Client closed connection id=26 addr=172.22.0.3:47590 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:48.170 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:21:48.172 - Accepted 172.22.0.4:38306
+1:M 11 Aug 2022 12:21:48.174 - Accepted 172.22.0.3:47634
+1:M 11 Aug 2022 12:21:48.180 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:48.182 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:21:48.184 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:48.186 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:48.188 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:21:48.190 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:48.209 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:21:50.118 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:21:53.132 * Starting BGSAVE for SYNC with target: replicas sockets
+77:C 11 Aug 2022 12:21:53.134 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:21:53.134 * Background RDB transfer started by pid 77
+1:M 11 Aug 2022 12:21:53.136 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:21:53.189 - Client closed connection id=27 addr=172.22.0.4:38306 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:53.191 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:21:53.194 - Client closed connection id=28 addr=172.22.0.3:47634 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:53.196 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:21:53.198 - Accepted 172.22.0.4:38346
+1:M 11 Aug 2022 12:21:53.200 - Accepted 172.22.0.3:47674
+1:M 11 Aug 2022 12:21:53.208 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:53.211 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:21:53.213 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:53.216 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:53.219 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:21:53.222 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:53.238 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:21:55.146 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:21:58.160 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:21:58.163 * Background RDB transfer started by pid 78
+78:C 11 Aug 2022 12:21:58.163 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:21:58.165 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:21:58.184 - Client closed connection id=29 addr=172.22.0.4:38346 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:58.186 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:21:58.188 - Client closed connection id=30 addr=172.22.0.3:47674 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:21:58.191 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:21:58.193 - Accepted 172.22.0.4:38390
+1:M 11 Aug 2022 12:21:58.194 - Accepted 172.22.0.3:47718
+1:M 11 Aug 2022 12:21:58.199 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:58.200 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:21:58.202 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:58.204 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:21:58.205 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:21:58.206 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:21:58.265 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:22:00.175 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:22:03.192 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:22:03.194 * Background RDB transfer started by pid 79
+79:C 11 Aug 2022 12:22:03.194 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:22:03.197 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:22:03.251 - Client closed connection id=31 addr=172.22.0.4:38390 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:03.254 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:22:03.256 - Client closed connection id=32 addr=172.22.0.3:47718 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:03.259 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:22:03.267 - Accepted 172.22.0.4:38430
+1:M 11 Aug 2022 12:22:03.270 - Accepted 172.22.0.3:47758
+1:M 11 Aug 2022 12:22:03.277 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:03.278 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:22:03.280 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:03.282 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:03.284 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:22:03.286 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:03.298 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:22:05.210 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:22:08.226 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:22:08.229 * Background RDB transfer started by pid 80
+80:C 11 Aug 2022 12:22:08.229 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:22:08.232 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:22:08.284 - Client closed connection id=34 addr=172.22.0.3:47758 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:08.286 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:22:08.289 - Client closed connection id=33 addr=172.22.0.4:38430 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:08.294 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:22:08.296 - Accepted 172.22.0.3:47800
+1:M 11 Aug 2022 12:22:08.297 - Accepted 172.22.0.4:38480
+1:M 11 Aug 2022 12:22:08.303 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:08.304 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:22:08.306 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:08.308 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:08.311 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:22:08.313 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:08.332 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:22:10.242 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:22:13.258 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:22:13.261 * Background RDB transfer started by pid 81
+81:C 11 Aug 2022 12:22:13.263 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:22:13.265 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:22:13.313 - Client closed connection id=35 addr=172.22.0.3:47800 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:13.316 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:22:13.318 - Client closed connection id=36 addr=172.22.0.4:38480 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:13.320 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:22:13.322 - Accepted 172.22.0.3:47846
+1:M 11 Aug 2022 12:22:13.325 - Accepted 172.22.0.4:38522
+1:M 11 Aug 2022 12:22:13.332 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:13.334 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:22:13.336 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:13.338 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:13.340 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:22:13.343 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:13.364 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:22:15.274 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:22:18.292 * Starting BGSAVE for SYNC with target: replicas sockets
+82:C 11 Aug 2022 12:22:18.296 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:22:18.296 * Background RDB transfer started by pid 82
+1:M 11 Aug 2022 12:22:18.299 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:22:18.356 - Client closed connection id=37 addr=172.22.0.3:47846 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:18.359 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:22:18.361 - Client closed connection id=38 addr=172.22.0.4:38522 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:18.364 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:22:18.366 - Accepted 172.22.0.3:47890
+1:M 11 Aug 2022 12:22:18.367 - Accepted 172.22.0.4:38566
+1:M 11 Aug 2022 12:22:18.376 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:18.378 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:22:18.380 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:18.382 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:18.385 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:22:18.386 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:18.401 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:22:20.312 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:22:23.331 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:22:23.335 * Background RDB transfer started by pid 83
+83:C 11 Aug 2022 12:22:23.335 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:22:23.340 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:22:23.360 - Client closed connection id=39 addr=172.22.0.3:47890 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:23.363 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:22:23.366 - Client closed connection id=40 addr=172.22.0.4:38566 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:23.368 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:22:23.370 - Accepted 172.22.0.3:47930
+1:M 11 Aug 2022 12:22:23.372 - Accepted 172.22.0.4:38606
+1:M 11 Aug 2022 12:22:23.380 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:23.382 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:22:23.384 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:23.387 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:23.389 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:22:23.392 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:23.441 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:22:25.353 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:22:28.373 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:22:28.378 * Background RDB transfer started by pid 84
+84:C 11 Aug 2022 12:22:28.378 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:22:28.383 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:22:28.401 - Client closed connection id=42 addr=172.22.0.4:38606 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:28.404 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:22:28.406 - Client closed connection id=41 addr=172.22.0.3:47930 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:28.409 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:22:28.411 - Accepted 172.22.0.4:38648
+1:M 11 Aug 2022 12:22:28.413 - Accepted 172.22.0.3:47976
+1:M 11 Aug 2022 12:22:28.420 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:28.422 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:22:28.424 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:28.426 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:28.428 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:22:28.430 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:28.483 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:22:30.396 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:22:33.416 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:22:33.419 * Background RDB transfer started by pid 85
+85:C 11 Aug 2022 12:22:33.419 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:22:33.422 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:22:33.440 - Client closed connection id=43 addr=172.22.0.4:38648 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:33.443 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:22:33.446 - Client closed connection id=44 addr=172.22.0.3:47976 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:33.449 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:22:33.451 - Accepted 172.22.0.4:38688
+1:M 11 Aug 2022 12:22:33.454 - Accepted 172.22.0.3:48016
+1:M 11 Aug 2022 12:22:33.462 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:33.464 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:22:33.466 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:33.468 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:33.471 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:22:33.473 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:33.523 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:22:35.439 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:22:38.461 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:22:38.466 * Background RDB transfer started by pid 86
+86:C 11 Aug 2022 12:22:38.467 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:22:38.471 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:22:38.528 - Client closed connection id=45 addr=172.22.0.4:38688 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:38.531 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:22:38.535 - Client closed connection id=46 addr=172.22.0.3:48016 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:38.538 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:22:38.540 - Accepted 172.22.0.4:38732
+1:M 11 Aug 2022 12:22:38.542 - Accepted 172.22.0.3:48060
+1:M 11 Aug 2022 12:22:38.549 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:38.550 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:22:38.552 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:38.554 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:38.557 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:22:38.558 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:38.571 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:22:40.483 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:22:43.500 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:22:43.503 * Background RDB transfer started by pid 87
+87:C 11 Aug 2022 12:22:43.503 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:22:43.506 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:22:43.524 - Client closed connection id=47 addr=172.22.0.4:38732 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:43.526 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:22:43.529 - Client closed connection id=48 addr=172.22.0.3:48060 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:43.531 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:22:43.533 - Accepted 172.22.0.4:38772
+1:M 11 Aug 2022 12:22:43.534 - Accepted 172.22.0.3:48100
+1:M 11 Aug 2022 12:22:43.540 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:43.541 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:22:43.542 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:43.544 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:43.546 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:22:43.548 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:43.608 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:22:45.522 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:22:48.541 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:22:48.544 * Background RDB transfer started by pid 88
+88:C 11 Aug 2022 12:22:48.544 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:22:48.547 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:22:48.604 - Client closed connection id=49 addr=172.22.0.4:38772 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:48.606 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:22:48.609 - Client closed connection id=50 addr=172.22.0.3:48100 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:48.611 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:22:48.613 - Accepted 172.22.0.4:38818
+1:M 11 Aug 2022 12:22:48.615 - Accepted 172.22.0.3:48146
+1:M 11 Aug 2022 12:22:48.621 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:48.623 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:22:48.625 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:48.627 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:48.630 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:22:48.631 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:48.648 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:22:50.561 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:22:53.579 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:22:53.583 * Background RDB transfer started by pid 89
+89:C 11 Aug 2022 12:22:53.583 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:22:53.586 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:22:53.604 - Client closed connection id=51 addr=172.22.0.4:38818 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:53.607 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:22:53.610 - Client closed connection id=52 addr=172.22.0.3:48146 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:53.612 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:22:53.614 - Accepted 172.22.0.4:38858
+1:M 11 Aug 2022 12:22:53.616 - Accepted 172.22.0.3:48186
+1:M 11 Aug 2022 12:22:53.622 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:53.624 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:22:53.625 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:53.627 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:53.629 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:22:53.632 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:53.687 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:22:55.600 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:22:58.623 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:22:58.627 * Background RDB transfer started by pid 90
+90:C 11 Aug 2022 12:22:58.626 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:22:58.629 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:22:58.687 - Client closed connection id=53 addr=172.22.0.4:38858 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:58.689 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:22:58.691 - Client closed connection id=54 addr=172.22.0.3:48186 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:22:58.694 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:22:58.696 - Accepted 172.22.0.4:38904
+1:M 11 Aug 2022 12:22:58.699 - Accepted 172.22.0.3:48232
+1:M 11 Aug 2022 12:22:58.707 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:58.709 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:22:58.711 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:58.713 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:22:58.715 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:22:58.717 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:22:58.731 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:23:00.645 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:23:03.665 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:23:03.668 * Background RDB transfer started by pid 91
+91:C 11 Aug 2022 12:23:03.669 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:23:03.671 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:23:03.727 - Client closed connection id=55 addr=172.22.0.4:38904 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:03.729 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:23:03.732 - Client closed connection id=56 addr=172.22.0.3:48232 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:03.734 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:23:03.737 - Accepted 172.22.0.4:38944
+1:M 11 Aug 2022 12:23:03.738 - Accepted 172.22.0.3:48272
+1:M 11 Aug 2022 12:23:03.746 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:03.748 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:23:03.750 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:03.753 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:03.756 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:23:03.758 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:03.771 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:23:05.685 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:23:08.710 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:23:08.713 * Background RDB transfer started by pid 92
+92:C 11 Aug 2022 12:23:08.714 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:23:08.717 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:23:08.772 - Client closed connection id=58 addr=172.22.0.3:48272 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:08.775 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:23:08.778 - Client closed connection id=57 addr=172.22.0.4:38944 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:08.781 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:23:08.783 - Accepted 172.22.0.3:48314
+1:M 11 Aug 2022 12:23:08.786 - Accepted 172.22.0.4:38990
+1:M 11 Aug 2022 12:23:08.793 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:08.794 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:23:08.796 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:08.797 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:08.799 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:23:08.800 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:08.818 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:23:10.731 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:23:13.752 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:23:13.756 * Background RDB transfer started by pid 93
+93:C 11 Aug 2022 12:23:13.756 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:23:13.758 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:23:13.814 - Client closed connection id=59 addr=172.22.0.3:48314 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:13.816 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:23:13.819 - Client closed connection id=60 addr=172.22.0.4:38990 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:13.821 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:23:13.824 - Accepted 172.22.0.3:48354
+1:M 11 Aug 2022 12:23:13.826 - Accepted 172.22.0.4:39030
+1:M 11 Aug 2022 12:23:13.834 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:13.836 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:23:13.838 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:13.840 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:13.842 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:23:13.844 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:13.860 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:23:15.774 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:23:18.794 * Starting BGSAVE for SYNC with target: replicas sockets
+94:C 11 Aug 2022 12:23:18.798 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:23:18.798 * Background RDB transfer started by pid 94
+1:M 11 Aug 2022 12:23:18.801 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:23:18.821 - Client closed connection id=61 addr=172.22.0.3:48354 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:18.824 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:23:18.826 - Client closed connection id=62 addr=172.22.0.4:39030 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:18.828 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:23:18.831 - Accepted 172.22.0.3:48400
+1:M 11 Aug 2022 12:23:18.833 - Accepted 172.22.0.4:39076
+1:M 11 Aug 2022 12:23:18.840 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:18.842 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:23:18.843 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:18.846 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:18.848 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:23:18.851 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:18.902 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:23:20.813 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:23:23.827 * Starting BGSAVE for SYNC with target: replicas sockets
+95:C 11 Aug 2022 12:23:23.831 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:23:23.832 * Background RDB transfer started by pid 95
+1:M 11 Aug 2022 12:23:23.835 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:23:23.856 - Client closed connection id=64 addr=172.22.0.4:39076 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:23.859 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:23:23.861 - Client closed connection id=63 addr=172.22.0.3:48400 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:23.864 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:23:23.867 - Accepted 172.22.0.4:39114
+1:M 11 Aug 2022 12:23:23.869 - Accepted 172.22.0.3:48442
+1:M 11 Aug 2022 12:23:23.877 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:23.879 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:23:23.881 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:23.883 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:23.885 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:23:23.888 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:23.936 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:23:25.844 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:23:28.855 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:23:28.858 * Background RDB transfer started by pid 96
+96:C 11 Aug 2022 12:23:28.858 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:23:28.861 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:23:28.915 - Client closed connection id=65 addr=172.22.0.4:39114 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:28.918 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:23:28.920 - Client closed connection id=66 addr=172.22.0.3:48442 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:28.922 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:23:28.924 - Accepted 172.22.0.4:39160
+1:M 11 Aug 2022 12:23:28.926 - Accepted 172.22.0.3:48488
+1:M 11 Aug 2022 12:23:28.934 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:28.936 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:23:28.937 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:28.940 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:28.941 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:23:28.943 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:28.961 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:23:30.874 . 0 clients connected (2 replicas), 4657256 bytes in use
+1:M 11 Aug 2022 12:23:33.894 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:23:33.898 * Background RDB transfer started by pid 97
+97:C 11 Aug 2022 12:23:33.903 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:23:33.911 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:23:33.933 - Client closed connection id=68 addr=172.22.0.3:48488 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:33.935 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:23:33.939 - Client closed connection id=67 addr=172.22.0.4:39160 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:33.945 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:23:33.948 - Accepted 172.22.0.3:48526
+1:M 11 Aug 2022 12:23:33.957 - Accepted 172.22.0.4:39202
+1:M 11 Aug 2022 12:23:33.980 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:33.988 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:23:33.991 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:33.993 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:33.996 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:23:34.010 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:34.022 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:23:35.937 . 0 clients connected (2 replicas), 4657736 bytes in use
+1:M 11 Aug 2022 12:23:38.959 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:23:38.963 * Background RDB transfer started by pid 98
+98:C 11 Aug 2022 12:23:38.965 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:23:38.968 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:23:39.025 - Client closed connection id=69 addr=172.22.0.3:48526 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:39.029 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:23:39.032 - Client closed connection id=70 addr=172.22.0.4:39202 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:39.035 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:23:39.037 - Accepted 172.22.0.3:48634
+1:M 11 Aug 2022 12:23:39.038 - Accepted 172.22.0.4:39308
+1:M 11 Aug 2022 12:23:39.046 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:39.047 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:23:39.049 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:39.051 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:39.052 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:23:39.053 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:39.066 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:23:40.974 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:23:44.992 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:23:44.996 * Background RDB transfer started by pid 99
+99:C 11 Aug 2022 12:23:44.996 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:23:44.999 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:23:45.055 - Client closed connection id=71 addr=172.22.0.3:48634 laddr=172.22.0.2:6379 fd=8 name= age=6 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:45.058 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:23:45.061 - Client closed connection id=72 addr=172.22.0.4:39308 laddr=172.22.0.2:6379 fd=9 name= age=6 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:45.064 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:23:45.066 - Accepted 172.22.0.4:39364
+1:M 11 Aug 2022 12:23:45.068 - Accepted 172.22.0.3:48692
+1:M 11 Aug 2022 12:23:45.074 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:45.076 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:23:45.077 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:45.080 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:45.081 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:23:45.083 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:45.100 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:23:46.007 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:23:50.032 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:23:50.037 * Background RDB transfer started by pid 100
+100:C 11 Aug 2022 12:23:50.037 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:23:50.041 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:23:50.101 - Client closed connection id=74 addr=172.22.0.3:48692 laddr=172.22.0.2:6379 fd=9 name= age=6 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:50.103 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:23:50.106 - Client closed connection id=73 addr=172.22.0.4:39364 laddr=172.22.0.2:6379 fd=8 name= age=6 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:50.108 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:23:50.110 - Accepted 172.22.0.3:48736
+1:M 11 Aug 2022 12:23:50.112 - Accepted 172.22.0.4:39412
+1:M 11 Aug 2022 12:23:50.118 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:50.120 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:23:50.121 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:50.123 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:50.125 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:23:50.126 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:50.141 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:23:51.047 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:23:55.069 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:23:55.072 * Background RDB transfer started by pid 101
+101:C 11 Aug 2022 12:23:55.072 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:23:55.075 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:23:55.130 - Client closed connection id=75 addr=172.22.0.3:48736 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:55.132 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:23:55.134 - Client closed connection id=76 addr=172.22.0.4:39412 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:23:55.136 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:23:55.139 - Accepted 172.22.0.3:48778
+1:M 11 Aug 2022 12:23:55.141 - Accepted 172.22.0.4:39454
+1:M 11 Aug 2022 12:23:55.146 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:55.148 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:23:55.150 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:55.152 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:23:55.154 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:23:55.155 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:23:55.176 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:23:56.082 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:24:00.103 * Starting BGSAVE for SYNC with target: replicas sockets
+102:C 11 Aug 2022 12:24:00.106 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:24:00.106 * Background RDB transfer started by pid 102
+1:M 11 Aug 2022 12:24:00.109 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:24:00.127 - Client closed connection id=77 addr=172.22.0.3:48778 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:00.130 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:24:00.133 - Client closed connection id=78 addr=172.22.0.4:39454 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:00.136 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:24:00.138 - Accepted 172.22.0.3:48822
+1:M 11 Aug 2022 12:24:00.139 - Accepted 172.22.0.4:39498
+1:M 11 Aug 2022 12:24:00.145 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:00.147 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:24:00.148 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:00.150 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:00.151 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:24:00.153 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:00.210 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:24:01.115 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:24:05.136 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:24:05.141 * Background RDB transfer started by pid 103
+103:C 11 Aug 2022 12:24:05.142 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:24:05.147 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:24:05.209 - Client closed connection id=80 addr=172.22.0.4:39498 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:05.214 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:24:05.219 - Client closed connection id=79 addr=172.22.0.3:48822 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:05.224 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:24:05.228 - Accepted 172.22.0.4:39538
+1:M 11 Aug 2022 12:24:05.230 - Accepted 172.22.0.3:48866
+1:M 11 Aug 2022 12:24:05.240 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:05.243 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:24:05.246 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:05.249 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:24:05.251 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:05.254 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:24:05.257 * Delay next BGSAVE for diskless SYNC
+1:M 11 Aug 2022 12:24:06.155 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:24:10.174 * Starting BGSAVE for SYNC with target: replicas sockets
+104:C 11 Aug 2022 12:24:10.178 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:24:10.178 * Background RDB transfer started by pid 104
+1:M 11 Aug 2022 12:24:10.182 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:24:10.236 - Client closed connection id=81 addr=172.22.0.4:39538 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:10.238 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:24:10.241 - Client closed connection id=82 addr=172.22.0.3:48866 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:10.244 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:24:10.246 - Accepted 172.22.0.4:39580
+1:M 11 Aug 2022 12:24:10.249 - Accepted 172.22.0.3:48908
+1:M 11 Aug 2022 12:24:10.257 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:10.259 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:24:10.261 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:10.265 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:10.266 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:24:10.268 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:10.281 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:24:11.187 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:24:15.206 * Starting BGSAVE for SYNC with target: replicas sockets
+105:C 11 Aug 2022 12:24:15.209 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:24:15.210 * Background RDB transfer started by pid 105
+1:M 11 Aug 2022 12:24:15.212 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:24:15.266 - Client closed connection id=84 addr=172.22.0.3:48908 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:15.269 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:24:15.271 - Client closed connection id=83 addr=172.22.0.4:39580 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:15.273 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:24:15.275 - Accepted 172.22.0.3:48948
+1:M 11 Aug 2022 12:24:15.277 - Accepted 172.22.0.4:39624
+1:M 11 Aug 2022 12:24:15.283 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:15.285 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:24:15.287 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:15.289 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:15.291 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:24:15.293 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:15.313 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:24:16.218 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:24:20.241 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:24:20.244 * Background RDB transfer started by pid 106
+106:C 11 Aug 2022 12:24:20.244 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:24:20.247 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:24:20.264 - Client closed connection id=85 addr=172.22.0.3:48948 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:20.267 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:24:20.269 - Client closed connection id=86 addr=172.22.0.4:39624 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:20.272 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:24:20.273 - Accepted 172.22.0.3:48990
+1:M 11 Aug 2022 12:24:20.275 - Accepted 172.22.0.4:39666
+1:M 11 Aug 2022 12:24:20.281 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:20.283 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:24:20.285 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:20.287 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:20.289 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:24:20.291 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:20.348 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:24:21.255 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:24:25.276 * Starting BGSAVE for SYNC with target: replicas sockets
+107:C 11 Aug 2022 12:24:25.279 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:24:25.279 * Background RDB transfer started by pid 107
+1:M 11 Aug 2022 12:24:25.282 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:24:25.336 - Client closed connection id=88 addr=172.22.0.4:39666 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:25.338 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:24:25.340 - Client closed connection id=87 addr=172.22.0.3:48990 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:25.343 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:24:25.344 - Accepted 172.22.0.4:39708
+1:M 11 Aug 2022 12:24:25.346 - Accepted 172.22.0.3:49036
+1:M 11 Aug 2022 12:24:25.351 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:25.353 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:24:25.354 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:25.356 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:25.357 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:24:25.359 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:25.383 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:24:26.290 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:24:30.314 * Starting BGSAVE for SYNC with target: replicas sockets
+108:C 11 Aug 2022 12:24:30.318 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:24:30.318 * Background RDB transfer started by pid 108
+1:M 11 Aug 2022 12:24:30.321 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:24:30.337 - Client closed connection id=89 addr=172.22.0.4:39708 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:30.340 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:24:30.342 - Client closed connection id=90 addr=172.22.0.3:49036 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:30.344 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:24:30.345 - Accepted 172.22.0.4:39752
+1:M 11 Aug 2022 12:24:30.347 - Accepted 172.22.0.3:49080
+1:M 11 Aug 2022 12:24:30.353 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:30.355 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:24:30.356 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:30.357 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:30.359 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:24:30.360 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:30.422 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:24:31.329 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:24:35.347 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:24:35.351 * Background RDB transfer started by pid 109
+109:C 11 Aug 2022 12:24:35.351 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:24:35.354 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:24:35.407 - Client closed connection id=92 addr=172.22.0.3:49080 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:35.409 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:24:35.411 - Client closed connection id=91 addr=172.22.0.4:39752 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:35.414 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:24:35.415 - Accepted 172.22.0.3:49120
+1:M 11 Aug 2022 12:24:35.417 - Accepted 172.22.0.4:39796
+1:M 11 Aug 2022 12:24:35.422 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:35.424 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:24:35.425 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:35.427 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:35.428 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:24:35.429 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:35.454 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:24:36.360 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:24:40.382 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:24:40.385 * Background RDB transfer started by pid 110
+110:C 11 Aug 2022 12:24:40.385 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:24:40.387 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:24:40.442 - Client closed connection id=93 addr=172.22.0.3:49120 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:40.444 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:24:40.446 - Client closed connection id=94 addr=172.22.0.4:39796 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:40.449 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:24:40.451 - Accepted 172.22.0.3:49162
+1:M 11 Aug 2022 12:24:40.452 - Accepted 172.22.0.4:39838
+1:M 11 Aug 2022 12:24:40.458 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:40.460 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:24:40.462 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:40.464 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:40.466 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:24:40.467 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:40.489 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:24:41.396 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:24:45.421 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:24:45.425 * Background RDB transfer started by pid 111
+111:C 11 Aug 2022 12:24:45.425 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:24:45.427 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:24:45.481 - Client closed connection id=95 addr=172.22.0.3:49162 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:45.484 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:24:45.488 - Client closed connection id=96 addr=172.22.0.4:39838 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:45.491 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:24:45.492 - Accepted 172.22.0.3:49204
+1:M 11 Aug 2022 12:24:45.494 - Accepted 172.22.0.4:39880
+1:M 11 Aug 2022 12:24:45.500 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:45.502 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:24:45.504 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:45.506 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:45.507 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:24:45.509 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:45.528 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:24:46.437 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:24:50.459 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:24:50.462 * Background RDB transfer started by pid 112
+112:C 11 Aug 2022 12:24:50.462 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:24:50.464 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:24:50.486 - Client closed connection id=97 addr=172.22.0.3:49204 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:50.488 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:24:50.491 - Client closed connection id=98 addr=172.22.0.4:39880 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:50.493 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:24:50.494 - Accepted 172.22.0.3:49246
+1:M 11 Aug 2022 12:24:50.496 - Accepted 172.22.0.4:39922
+1:M 11 Aug 2022 12:24:50.503 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:50.505 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:24:50.506 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:50.508 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:50.510 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:24:50.512 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:50.565 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:24:51.472 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:24:55.496 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:24:55.499 * Background RDB transfer started by pid 113
+113:C 11 Aug 2022 12:24:55.499 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:24:55.502 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:24:55.523 - Client closed connection id=99 addr=172.22.0.3:49246 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:55.525 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:24:55.527 - Client closed connection id=100 addr=172.22.0.4:39922 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:24:55.529 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:24:55.531 - Accepted 172.22.0.3:49288
+1:M 11 Aug 2022 12:24:55.533 - Accepted 172.22.0.4:39964
+1:M 11 Aug 2022 12:24:55.543 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:55.545 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:24:55.547 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:55.548 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:24:55.550 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:24:55.552 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:24:55.602 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:24:56.508 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:25:00.528 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:25:00.531 * Background RDB transfer started by pid 114
+114:C 11 Aug 2022 12:25:00.531 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:25:00.534 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:25:00.549 - Client closed connection id=102 addr=172.22.0.4:39964 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:00.551 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:25:00.554 - Client closed connection id=101 addr=172.22.0.3:49288 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:00.556 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:25:00.558 - Accepted 172.22.0.4:40004
+1:M 11 Aug 2022 12:25:00.559 - Accepted 172.22.0.3:49332
+1:M 11 Aug 2022 12:25:00.564 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:00.566 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:25:00.568 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:00.569 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:00.571 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:25:00.572 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:00.635 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:25:01.543 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:25:05.567 * Starting BGSAVE for SYNC with target: replicas sockets
+115:C 11 Aug 2022 12:25:05.570 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:25:05.570 * Background RDB transfer started by pid 115
+1:M 11 Aug 2022 12:25:05.572 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:25:05.587 - Client closed connection id=104 addr=172.22.0.3:49332 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:05.589 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:25:05.592 - Client closed connection id=103 addr=172.22.0.4:40004 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:05.594 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:25:05.595 - Accepted 172.22.0.3:49376
+1:M 11 Aug 2022 12:25:05.597 - Accepted 172.22.0.4:40052
+1:M 11 Aug 2022 12:25:05.603 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:05.605 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:25:05.607 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:05.609 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:05.612 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:25:05.614 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:05.674 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:25:06.582 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:25:10.603 * Starting BGSAVE for SYNC with target: replicas sockets
+116:C 11 Aug 2022 12:25:10.606 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:25:10.606 * Background RDB transfer started by pid 116
+1:M 11 Aug 2022 12:25:10.608 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:25:10.626 - Client closed connection id=106 addr=172.22.0.4:40052 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:10.629 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:25:10.631 - Client closed connection id=105 addr=172.22.0.3:49376 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:10.633 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:25:10.637 - Accepted 172.22.0.4:40092
+1:M 11 Aug 2022 12:25:10.639 - Accepted 172.22.0.3:49416
+1:M 11 Aug 2022 12:25:10.648 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:10.650 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:25:10.652 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:10.653 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:10.655 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:25:10.657 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:10.709 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:25:11.615 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:25:15.633 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:25:15.636 * Background RDB transfer started by pid 117
+117:C 11 Aug 2022 12:25:15.636 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:25:15.639 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:25:15.655 - Client closed connection id=107 addr=172.22.0.4:40092 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:15.657 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:25:15.659 - Client closed connection id=108 addr=172.22.0.3:49416 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:15.662 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:25:15.664 - Accepted 172.22.0.4:40134
+1:M 11 Aug 2022 12:25:15.665 - Accepted 172.22.0.3:49462
+1:M 11 Aug 2022 12:25:15.670 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:15.671 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:25:15.673 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:15.675 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:15.676 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:25:15.678 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:15.739 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:25:16.644 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:25:20.665 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:25:20.669 * Background RDB transfer started by pid 118
+118:C 11 Aug 2022 12:25:20.669 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:25:20.672 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:25:20.690 - Client closed connection id=110 addr=172.22.0.3:49462 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:20.693 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:25:20.695 - Client closed connection id=109 addr=172.22.0.4:40134 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:20.697 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:25:20.699 - Accepted 172.22.0.3:49504
+1:M 11 Aug 2022 12:25:20.702 - Accepted 172.22.0.4:40180
+1:M 11 Aug 2022 12:25:20.710 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:20.712 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:25:20.714 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:20.716 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:20.719 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:25:20.722 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:20.772 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:25:21.679 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:25:25.700 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:25:25.703 * Background RDB transfer started by pid 119
+119:C 11 Aug 2022 12:25:25.703 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:25:25.705 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:25:25.720 - Client closed connection id=111 addr=172.22.0.3:49504 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:25.722 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:25:25.725 - Client closed connection id=112 addr=172.22.0.4:40180 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:25.727 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:25:25.729 - Accepted 172.22.0.3:49548
+1:M 11 Aug 2022 12:25:25.731 - Accepted 172.22.0.4:40224
+1:M 11 Aug 2022 12:25:25.737 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:25.739 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:25:25.741 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:25.742 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:25.744 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:25:25.746 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:25.806 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:25:26.712 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:25:30.736 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:25:30.740 * Background RDB transfer started by pid 120
+120:C 11 Aug 2022 12:25:30.741 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:25:30.744 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:25:30.761 - Client closed connection id=113 addr=172.22.0.3:49548 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:30.764 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:25:30.766 - Client closed connection id=114 addr=172.22.0.4:40224 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:30.769 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:25:30.771 - Accepted 172.22.0.3:49588
+1:M 11 Aug 2022 12:25:30.773 - Accepted 172.22.0.4:40264
+1:M 11 Aug 2022 12:25:30.779 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:30.781 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:25:30.783 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:30.786 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:30.788 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:25:30.790 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:30.845 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:25:31.752 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:25:35.775 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:25:35.779 * Background RDB transfer started by pid 121
+121:C 11 Aug 2022 12:25:35.779 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:25:35.783 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:25:35.799 - Client closed connection id=115 addr=172.22.0.3:49588 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:35.802 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:25:35.805 - Client closed connection id=116 addr=172.22.0.4:40264 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:35.808 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:25:35.810 - Accepted 172.22.0.3:49632
+1:M 11 Aug 2022 12:25:35.812 - Accepted 172.22.0.4:40308
+1:M 11 Aug 2022 12:25:35.820 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:35.822 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:25:35.825 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:35.827 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:35.830 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:25:35.832 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:35.884 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:25:36.790 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:25:40.812 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:25:40.815 * Background RDB transfer started by pid 122
+122:C 11 Aug 2022 12:25:40.815 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:25:40.817 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:25:40.832 - Client closed connection id=118 addr=172.22.0.4:40308 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:40.834 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:25:40.836 - Client closed connection id=117 addr=172.22.0.3:49632 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:40.838 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:25:40.840 - Accepted 172.22.0.4:40348
+1:M 11 Aug 2022 12:25:40.841 - Accepted 172.22.0.3:49676
+1:M 11 Aug 2022 12:25:40.847 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:40.849 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:25:40.851 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:40.853 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:40.855 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:25:40.857 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:40.919 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:25:41.826 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:25:45.847 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:25:45.850 * Background RDB transfer started by pid 123
+123:C 11 Aug 2022 12:25:45.850 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:25:45.852 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:25:45.868 - Client closed connection id=120 addr=172.22.0.3:49676 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:45.871 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:25:45.873 - Client closed connection id=119 addr=172.22.0.4:40348 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:45.875 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:25:45.877 - Accepted 172.22.0.3:49718
+1:M 11 Aug 2022 12:25:45.879 - Accepted 172.22.0.4:40394
+1:M 11 Aug 2022 12:25:45.884 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:45.887 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:25:45.889 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:45.891 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:45.893 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:25:45.895 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:45.953 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:25:46.857 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:25:50.874 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:25:50.877 * Background RDB transfer started by pid 124
+124:C 11 Aug 2022 12:25:50.878 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:25:50.881 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:25:50.897 - Client closed connection id=121 addr=172.22.0.3:49718 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:50.899 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:25:50.901 - Client closed connection id=122 addr=172.22.0.4:40394 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:50.903 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:25:50.905 - Accepted 172.22.0.3:49770
+1:M 11 Aug 2022 12:25:50.906 - Accepted 172.22.0.4:40446
+1:M 11 Aug 2022 12:25:50.912 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:50.914 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:25:50.916 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:50.917 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:50.920 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:25:50.921 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:50.980 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:25:51.887 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:25:55.907 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:25:55.911 * Background RDB transfer started by pid 125
+125:C 11 Aug 2022 12:25:55.911 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:25:55.914 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:25:55.933 - Client closed connection id=123 addr=172.22.0.3:49770 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:55.937 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:25:55.939 - Client closed connection id=124 addr=172.22.0.4:40446 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:25:55.943 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:25:55.945 - Accepted 172.22.0.3:49822
+1:M 11 Aug 2022 12:25:55.946 - Accepted 172.22.0.4:40498
+1:M 11 Aug 2022 12:25:55.952 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:55.954 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:25:55.955 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:55.957 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:25:55.958 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:25:55.959 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:25:56.021 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:25:56.929 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:26:00.948 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:26:00.951 * Background RDB transfer started by pid 126
+126:C 11 Aug 2022 12:26:00.951 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:26:00.953 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:26:00.968 - Client closed connection id=126 addr=172.22.0.4:40498 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:00.970 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:26:00.973 - Client closed connection id=125 addr=172.22.0.3:49822 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:00.975 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:26:00.977 - Accepted 172.22.0.4:40544
+1:M 11 Aug 2022 12:26:00.978 - Accepted 172.22.0.3:49872
+1:M 11 Aug 2022 12:26:00.985 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:00.986 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:26:00.988 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:00.990 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:00.992 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:26:00.993 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:01.054 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:26:01.960 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:26:05.981 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:26:05.984 * Background RDB transfer started by pid 127
+127:C 11 Aug 2022 12:26:05.984 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:26:05.987 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:26:06.002 - Client closed connection id=127 addr=172.22.0.4:40544 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:06.004 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:26:06.006 - Client closed connection id=128 addr=172.22.0.3:49872 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:06.008 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:26:06.010 - Accepted 172.22.0.4:40588
+1:M 11 Aug 2022 12:26:06.013 - Accepted 172.22.0.3:49916
+1:M 11 Aug 2022 12:26:06.019 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:06.021 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:26:06.022 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:06.024 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:06.026 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:26:06.027 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:06.088 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:26:06.995 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:26:11.012 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:26:11.015 * Background RDB transfer started by pid 128
+128:C 11 Aug 2022 12:26:11.015 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:26:11.019 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:26:11.039 - Client closed connection id=129 addr=172.22.0.4:40588 laddr=172.22.0.2:6379 fd=8 name= age=6 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:11.044 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:26:11.047 - Client closed connection id=130 addr=172.22.0.3:49916 laddr=172.22.0.2:6379 fd=9 name= age=6 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:11.049 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:26:11.051 - Accepted 172.22.0.4:40628
+1:M 11 Aug 2022 12:26:11.053 - Accepted 172.22.0.3:49956
+1:M 11 Aug 2022 12:26:11.059 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:11.061 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:26:11.062 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:11.064 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:11.066 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:26:11.067 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:11.119 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:26:12.026 . 0 clients connected (2 replicas), 4657688 bytes in use
+1:M 11 Aug 2022 12:26:16.045 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:26:16.049 * Background RDB transfer started by pid 129
+129:C 11 Aug 2022 12:26:16.049 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:26:16.051 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:26:16.069 - Client closed connection id=132 addr=172.22.0.3:49956 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:16.071 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:26:16.074 - Client closed connection id=131 addr=172.22.0.4:40628 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:16.077 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:26:16.079 - Accepted 172.22.0.3:50000
+1:M 11 Aug 2022 12:26:16.082 - Accepted 172.22.0.4:40676
+1:M 11 Aug 2022 12:26:16.088 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:16.090 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:26:16.097 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:16.106 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:16.111 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:26:16.117 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:16.152 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:26:17.058 . 0 clients connected (2 replicas), 4658168 bytes in use
+1:M 11 Aug 2022 12:26:21.078 * Starting BGSAVE for SYNC with target: replicas sockets
+130:C 11 Aug 2022 12:26:21.081 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:26:21.081 * Background RDB transfer started by pid 130
+1:M 11 Aug 2022 12:26:21.084 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:26:21.103 - Client closed connection id=134 addr=172.22.0.4:40676 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:21.106 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:26:21.109 - Client closed connection id=133 addr=172.22.0.3:50000 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:21.111 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:26:21.114 - Accepted 172.22.0.4:40716
+1:M 11 Aug 2022 12:26:21.116 - Accepted 172.22.0.3:50044
+1:M 11 Aug 2022 12:26:21.123 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:21.125 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:26:21.127 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:21.128 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:21.130 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:26:21.132 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:21.185 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:26:22.100 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:26:26.117 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:26:26.120 * Background RDB transfer started by pid 131
+131:C 11 Aug 2022 12:26:26.120 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:26:26.123 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:26:26.217 - Client closed connection id=136 addr=172.22.0.3:50044 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:26.219 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:26:26.221 - Client closed connection id=135 addr=172.22.0.4:40716 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:26.224 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:26:26.226 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:26:26.228 - Accepted 172.22.0.4:40760
+1:M 11 Aug 2022 12:26:26.230 - Accepted 172.22.0.3:50088
+1:M 11 Aug 2022 12:26:26.237 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:26.239 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:26:26.241 * Delay next BGSAVE for diskless SYNC
+1:M 11 Aug 2022 12:26:26.243 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:26.245 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:26:26.247 * Delay next BGSAVE for diskless SYNC
+1:M 11 Aug 2022 12:26:27.132 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:26:31.151 * Starting BGSAVE for SYNC with target: replicas sockets
+132:C 11 Aug 2022 12:26:31.154 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:26:31.154 * Background RDB transfer started by pid 132
+1:M 11 Aug 2022 12:26:31.156 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:26:31.175 - Client closed connection id=138 addr=172.22.0.3:50088 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:31.178 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:26:31.180 - Client closed connection id=137 addr=172.22.0.4:40760 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:31.182 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:26:31.184 - Accepted 172.22.0.3:50126
+1:M 11 Aug 2022 12:26:31.186 - Accepted 172.22.0.4:40802
+1:M 11 Aug 2022 12:26:31.194 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:31.196 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:26:31.199 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:31.201 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:31.203 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:26:31.204 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:31.257 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:26:32.162 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:26:36.183 * Starting BGSAVE for SYNC with target: replicas sockets
+133:C 11 Aug 2022 12:26:36.186 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:26:36.186 * Background RDB transfer started by pid 133
+1:M 11 Aug 2022 12:26:36.209 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:26:36.289 - Client closed connection id=140 addr=172.22.0.4:40802 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:36.292 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:26:36.295 - Client closed connection id=139 addr=172.22.0.3:50126 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:36.298 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:26:36.300 - Accepted 172.22.0.4:40846
+1:M 11 Aug 2022 12:26:36.302 - Accepted 172.22.0.3:50174
+1:M 11 Aug 2022 12:26:36.308 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:26:36.310 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:36.312 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:26:36.315 * Delay next BGSAVE for diskless SYNC
+1:M 11 Aug 2022 12:26:36.317 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:36.320 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:26:36.322 * Delay next BGSAVE for diskless SYNC
+1:M 11 Aug 2022 12:26:37.214 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:26:41.235 * Starting BGSAVE for SYNC with target: replicas sockets
+134:C 11 Aug 2022 12:26:41.237 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:26:41.238 * Background RDB transfer started by pid 134
+1:M 11 Aug 2022 12:26:41.240 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:26:41.292 - Client closed connection id=142 addr=172.22.0.3:50174 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:41.295 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:26:41.298 - Client closed connection id=141 addr=172.22.0.4:40846 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:41.300 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:26:41.301 - Accepted 172.22.0.3:50212
+1:M 11 Aug 2022 12:26:41.303 - Accepted 172.22.0.4:40888
+1:M 11 Aug 2022 12:26:41.309 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:41.310 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:26:41.312 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:41.314 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:41.315 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:26:41.317 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:41.341 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:26:42.246 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:26:46.269 * Starting BGSAVE for SYNC with target: replicas sockets
+135:C 11 Aug 2022 12:26:46.287 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:26:46.287 * Background RDB transfer started by pid 135
+1:M 11 Aug 2022 12:26:46.291 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:26:46.346 - Client closed connection id=143 addr=172.22.0.3:50212 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:46.348 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:26:46.350 - Client closed connection id=144 addr=172.22.0.4:40888 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:46.353 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:26:46.355 - Accepted 172.22.0.3:50256
+1:M 11 Aug 2022 12:26:46.357 - Accepted 172.22.0.4:40932
+1:M 11 Aug 2022 12:26:46.363 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:46.365 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:26:46.367 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:46.368 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:46.370 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:26:46.371 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:46.392 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:26:47.297 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:26:51.314 * Starting BGSAVE for SYNC with target: replicas sockets
+136:C 11 Aug 2022 12:26:51.317 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:26:51.316 * Background RDB transfer started by pid 136
+1:M 11 Aug 2022 12:26:51.319 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:26:51.373 - Client closed connection id=145 addr=172.22.0.3:50256 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:51.376 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:26:51.378 - Client closed connection id=146 addr=172.22.0.4:40932 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:51.382 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:26:51.383 - Accepted 172.22.0.4:40970
+1:M 11 Aug 2022 12:26:51.385 - Accepted 172.22.0.3:50298
+1:M 11 Aug 2022 12:26:51.391 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:51.393 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:26:51.395 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:51.397 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:51.398 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:26:51.400 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:51.419 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:26:52.324 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:26:56.340 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:26:56.344 * Background RDB transfer started by pid 137
+137:C 11 Aug 2022 12:26:56.344 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:26:56.347 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:26:56.402 - Client closed connection id=148 addr=172.22.0.3:50298 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:56.405 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:26:56.408 - Client closed connection id=147 addr=172.22.0.4:40970 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:26:56.411 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:26:56.413 - Accepted 172.22.0.3:50342
+1:M 11 Aug 2022 12:26:56.416 - Accepted 172.22.0.4:41018
+1:M 11 Aug 2022 12:26:56.424 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:56.426 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:26:56.428 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:56.431 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:26:56.433 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:26:56.436 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:26:56.448 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:26:57.353 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:27:01.371 * Starting BGSAVE for SYNC with target: replicas sockets
+138:C 11 Aug 2022 12:27:01.374 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:27:01.374 * Background RDB transfer started by pid 138
+1:M 11 Aug 2022 12:27:01.377 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:27:01.395 - Client closed connection id=149 addr=172.22.0.3:50342 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:01.398 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:27:01.400 - Client closed connection id=150 addr=172.22.0.4:41018 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:01.403 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:27:01.405 - Accepted 172.22.0.4:41056
+1:M 11 Aug 2022 12:27:01.407 - Accepted 172.22.0.3:50384
+1:M 11 Aug 2022 12:27:01.412 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:01.414 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:27:01.415 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:01.417 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:01.419 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:27:01.420 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:01.477 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:27:02.384 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:27:06.400 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:27:06.404 * Background RDB transfer started by pid 139
+139:C 11 Aug 2022 12:27:06.404 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:27:06.406 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:27:06.460 - Client closed connection id=151 addr=172.22.0.4:41056 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:06.463 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:27:06.465 - Client closed connection id=152 addr=172.22.0.3:50384 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:06.468 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:27:06.470 - Accepted 172.22.0.4:41100
+1:M 11 Aug 2022 12:27:06.471 - Accepted 172.22.0.3:50428
+1:M 11 Aug 2022 12:27:06.479 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:06.481 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:27:06.483 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:06.485 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:06.487 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:27:06.488 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:06.506 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:27:07.413 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:27:11.430 * Starting BGSAVE for SYNC with target: replicas sockets
+140:C 11 Aug 2022 12:27:11.433 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:27:11.433 * Background RDB transfer started by pid 140
+1:M 11 Aug 2022 12:27:11.436 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:27:11.489 - Client closed connection id=154 addr=172.22.0.3:50428 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:11.492 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:27:11.494 - Client closed connection id=153 addr=172.22.0.4:41100 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:11.496 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:27:11.498 - Accepted 172.22.0.3:50466
+1:M 11 Aug 2022 12:27:11.501 - Accepted 172.22.0.4:41142
+1:M 11 Aug 2022 12:27:11.508 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:11.510 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:27:11.513 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:11.515 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:11.517 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:27:11.519 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:11.537 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:27:12.444 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:27:16.469 * Starting BGSAVE for SYNC with target: replicas sockets
+141:C 11 Aug 2022 12:27:16.472 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:27:16.472 * Background RDB transfer started by pid 141
+1:M 11 Aug 2022 12:27:16.475 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:27:16.528 - Client closed connection id=156 addr=172.22.0.4:41142 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:16.530 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:27:16.532 - Client closed connection id=155 addr=172.22.0.3:50466 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:16.534 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:27:16.536 - Accepted 172.22.0.4:41184
+1:M 11 Aug 2022 12:27:16.538 - Accepted 172.22.0.3:50512
+1:M 11 Aug 2022 12:27:16.545 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:16.547 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:27:16.549 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:16.551 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:16.554 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:27:16.556 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:16.575 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:27:17.481 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:27:21.501 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:27:21.504 * Background RDB transfer started by pid 142
+142:C 11 Aug 2022 12:27:21.504 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:27:21.506 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:27:21.522 - Client closed connection id=157 addr=172.22.0.4:41184 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:21.525 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:27:21.527 - Client closed connection id=158 addr=172.22.0.3:50512 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:21.528 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:27:21.530 - Accepted 172.22.0.4:41224
+1:M 11 Aug 2022 12:27:21.532 - Accepted 172.22.0.3:50552
+1:M 11 Aug 2022 12:27:21.538 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:21.539 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:27:21.541 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:21.543 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:21.544 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:27:21.547 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:21.607 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:27:22.513 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:27:26.535 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:27:26.537 * Background RDB transfer started by pid 143
+143:C 11 Aug 2022 12:27:26.538 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:27:26.540 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:27:26.558 - Client closed connection id=159 addr=172.22.0.4:41224 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:26.560 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:27:26.562 - Client closed connection id=160 addr=172.22.0.3:50552 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:26.565 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:27:26.567 - Accepted 172.22.0.3:50596
+1:M 11 Aug 2022 12:27:26.570 - Accepted 172.22.0.4:41272
+1:M 11 Aug 2022 12:27:26.578 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:26.580 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:27:26.582 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:26.585 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:26.588 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:27:26.589 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:26.642 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:27:27.550 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:27:31.572 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:27:31.575 * Background RDB transfer started by pid 144
+144:C 11 Aug 2022 12:27:31.575 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:27:31.579 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:27:31.633 - Client closed connection id=162 addr=172.22.0.4:41272 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:31.635 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:27:31.638 - Client closed connection id=161 addr=172.22.0.3:50596 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:31.640 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:27:31.643 - Accepted 172.22.0.4:41310
+1:M 11 Aug 2022 12:27:31.645 - Accepted 172.22.0.3:50638
+1:M 11 Aug 2022 12:27:31.652 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:31.654 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:27:31.655 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:31.657 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:31.659 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:27:31.660 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:31.679 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:27:32.584 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:27:36.601 * Starting BGSAVE for SYNC with target: replicas sockets
+145:C 11 Aug 2022 12:27:36.604 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:27:36.604 * Background RDB transfer started by pid 145
+1:M 11 Aug 2022 12:27:36.607 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:27:36.626 - Client closed connection id=164 addr=172.22.0.3:50638 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:36.628 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:27:36.630 - Client closed connection id=163 addr=172.22.0.4:41310 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:36.632 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:27:36.635 - Accepted 172.22.0.3:50680
+1:M 11 Aug 2022 12:27:36.637 - Accepted 172.22.0.4:41356
+1:M 11 Aug 2022 12:27:36.645 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:36.648 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:27:36.650 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:36.653 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:36.656 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:27:36.658 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:36.708 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:27:37.613 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:27:41.632 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:27:41.635 * Background RDB transfer started by pid 146
+146:C 11 Aug 2022 12:27:41.636 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:27:41.638 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:27:41.691 - Client closed connection id=165 addr=172.22.0.3:50680 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:41.693 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:27:41.695 - Client closed connection id=166 addr=172.22.0.4:41356 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:41.699 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:27:41.703 - Accepted 172.22.0.3:50722
+1:M 11 Aug 2022 12:27:41.707 - Accepted 172.22.0.4:41398
+1:M 11 Aug 2022 12:27:41.713 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:41.715 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:27:41.717 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:41.720 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:41.722 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:27:41.724 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:41.739 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:27:42.645 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:27:46.667 * Starting BGSAVE for SYNC with target: replicas sockets
+147:C 11 Aug 2022 12:27:46.670 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:27:46.670 * Background RDB transfer started by pid 147
+1:M 11 Aug 2022 12:27:46.672 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:27:46.725 - Client closed connection id=168 addr=172.22.0.4:41398 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:46.727 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:27:46.729 - Client closed connection id=167 addr=172.22.0.3:50722 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:46.731 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:27:46.733 - Accepted 172.22.0.4:41440
+1:M 11 Aug 2022 12:27:46.734 - Accepted 172.22.0.3:50768
+1:M 11 Aug 2022 12:27:46.740 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:46.742 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:27:46.745 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:46.747 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:46.748 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:27:46.749 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:46.774 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:27:47.679 . 0 clients connected (2 replicas), 4658120 bytes in use
+1:M 11 Aug 2022 12:27:51.695 * Starting BGSAVE for SYNC with target: replicas sockets
+1:M 11 Aug 2022 12:27:51.698 * Background RDB transfer started by pid 148
+148:C 11 Aug 2022 12:27:51.698 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+1:M 11 Aug 2022 12:27:51.701 # Diskless rdb transfer, done reading from pipe, 2 replicas still up.
+1:M 11 Aug 2022 12:27:51.717 - Client closed connection id=169 addr=172.22.0.4:41440 laddr=172.22.0.2:6379 fd=8 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:51.720 # Connection with replica 172.22.0.4:6379 lost.
+1:M 11 Aug 2022 12:27:51.722 - Client closed connection id=170 addr=172.22.0.3:50768 laddr=172.22.0.2:6379 fd=9 name= age=5 idle=5 flags=S db=0 sub=0 psub=0 ssub=0 multi=-1 qbuf=0 qbuf-free=20474 argv-mem=0 multi-mem=0 rbs=1024 rbp=0 obl=0 oll=0 omem=0 tot-mem=22272 events=r cmd=psync user=default redir=-1 resp=2
+1:M 11 Aug 2022 12:27:51.725 # Connection with replica 172.22.0.3:6379 lost.
+1:M 11 Aug 2022 12:27:51.727 - Accepted 172.22.0.4:41480
+1:M 11 Aug 2022 12:27:51.729 - Accepted 172.22.0.3:50808
+1:M 11 Aug 2022 12:27:51.735 * Replica 172.22.0.3:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:51.737 * Full resync requested by replica 172.22.0.3:6379
+1:M 11 Aug 2022 12:27:51.739 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:51.741 * Replica 172.22.0.4:6379 asks for synchronization
+1:M 11 Aug 2022 12:27:51.743 * Full resync requested by replica 172.22.0.4:6379
+1:M 11 Aug 2022 12:27:51.745 * Current BGSAVE has socket target. Waiting for next BGSAVE for SYNC
+1:M 11 Aug 2022 12:27:51.801 * Background RDB transfer terminated with success
+1:M 11 Aug 2022 12:27:52.706 . 0 clients connected (2 replicas), 4658120 bytes in use

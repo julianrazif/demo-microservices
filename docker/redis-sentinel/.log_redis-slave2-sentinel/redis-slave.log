@@ -1,0 +1,969 @@
+1:C 11 Aug 2022 12:20:46.589 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 11 Aug 2022 12:20:46.591 # Redis version=7.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 11 Aug 2022 12:20:46.594 # Configuration loaded
+1:S 11 Aug 2022 12:20:46.597 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 7.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:S 11 Aug 2022 12:20:46.603 # Server initialized
+1:S 11 Aug 2022 12:20:46.606 . The AOF directory appendonlydir doesn't exist
+1:S 11 Aug 2022 12:20:46.618 * Creating AOF base file appendonly.aof.1.base.aof on server start
+1:S 11 Aug 2022 12:20:46.628 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+1:S 11 Aug 2022 12:20:46.630 * Ready to accept connections
+1:S 11 Aug 2022 12:20:46.631 . 0 clients connected (0 replicas), 4517168 bytes in use
+1:S 11 Aug 2022 12:20:46.633 * Connecting to MASTER redis-master-sentinel:6379
+1:S 11 Aug 2022 12:20:46.636 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:20:46.638 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:20:46.640 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:20:46.642 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:20:51.664 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:20:51.695 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:0
+1:S 11 Aug 2022 12:20:51.700 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:20:51.706 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:20:51.707 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:20:51.716 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:20:51.719 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:20:51.722 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:20:51.725 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:20:51.733 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:20:51.736 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:20:56.696 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:20:56.733 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:14
+1:S 11 Aug 2022 12:20:56.738 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:20:56.740 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:20:56.742 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:20:56.788 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:20:56.791 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:20:56.794 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:20:56.796 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:20:56.801 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:20:56.802 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:21:01.727 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:21:01.774 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:14
+1:S 11 Aug 2022 12:21:01.780 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:21:01.783 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:21:01.785 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:21:01.833 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:21:01.837 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:21:01.839 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:21:01.842 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:21:01.850 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:21:01.852 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:21:06.771 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:21:06.814 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:28
+1:S 11 Aug 2022 12:21:06.819 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:21:06.823 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:21:06.826 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:21:06.873 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:21:06.877 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:21:06.879 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:21:06.882 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:21:06.889 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:21:06.892 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:21:11.812 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:21:11.855 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:28
+1:S 11 Aug 2022 12:21:11.860 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:21:11.863 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:21:11.866 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:21:11.912 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:21:11.916 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:21:11.919 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:21:11.922 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:21:11.929 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:21:11.932 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:21:16.857 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:21:16.895 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:42
+1:S 11 Aug 2022 12:21:16.901 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:21:16.904 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:21:16.906 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:21:16.955 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:21:16.959 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:21:16.961 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:21:16.964 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:21:16.971 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:21:16.973 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:21:21.889 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:21:21.929 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:42
+1:S 11 Aug 2022 12:21:21.935 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:21:21.939 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:21:21.942 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:21:21.950 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:21:21.953 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:21:21.957 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:21:21.960 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:21:21.967 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:21:21.969 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:21:26.913 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:21:26.960 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:56
+1:S 11 Aug 2022 12:21:26.965 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:21:26.967 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:21:26.969 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:21:27.015 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:21:27.019 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:21:27.021 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:21:27.023 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:21:27.028 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:21:27.030 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:21:31.948 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:21:33.003 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:56
+1:S 11 Aug 2022 12:21:33.006 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:21:33.009 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:21:33.011 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:21:33.057 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:21:33.061 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:21:33.063 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:21:33.065 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:21:33.071 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:21:33.072 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:21:36.983 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:21:38.034 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:70
+1:S 11 Aug 2022 12:21:38.039 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:21:38.043 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:21:38.045 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:21:38.055 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:21:38.058 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:21:38.062 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:21:38.067 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:21:38.074 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:21:38.077 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:21:42.012 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:21:43.067 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:70
+1:S 11 Aug 2022 12:21:43.072 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:21:43.075 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:21:43.076 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:21:43.124 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:21:43.128 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:21:43.132 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:21:43.135 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:21:43.140 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:21:43.142 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:21:47.055 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:21:48.105 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:84
+1:S 11 Aug 2022 12:21:48.110 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:21:48.113 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:21:48.116 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:21:48.162 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:21:48.165 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:21:48.168 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:21:48.170 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:21:48.176 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:21:48.178 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:21:52.087 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:21:53.134 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:84
+1:S 11 Aug 2022 12:21:53.137 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:21:53.140 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:21:53.141 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:21:53.188 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:21:53.191 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:21:53.194 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:21:53.196 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:21:53.203 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:21:53.206 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:21:57.112 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:21:58.163 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:98
+1:S 11 Aug 2022 12:21:58.166 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:21:58.169 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:21:58.172 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:21:58.183 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:21:58.187 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:21:58.189 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:21:58.191 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:21:58.196 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:21:58.198 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:22:02.132 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:22:03.194 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:98
+1:S 11 Aug 2022 12:22:03.199 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:22:03.201 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:22:03.203 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:22:03.250 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:22:03.254 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:22:03.257 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:22:03.264 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:22:03.272 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:22:03.275 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:22:07.178 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:22:08.229 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:112
+1:S 11 Aug 2022 12:22:08.233 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:22:08.236 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:22:08.238 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:22:08.282 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:22:08.285 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:22:08.288 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:22:08.291 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:22:08.299 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:22:08.301 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:22:12.210 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:22:13.261 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:112
+1:S 11 Aug 2022 12:22:13.265 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:22:13.269 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:22:13.270 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:22:13.312 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:22:13.314 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:22:13.317 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:22:13.320 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:22:13.327 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:22:13.330 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:22:17.241 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:22:18.296 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:126
+1:S 11 Aug 2022 12:22:18.300 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:22:18.304 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:22:18.306 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:22:18.353 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:22:18.357 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:22:18.361 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:22:18.364 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:22:18.370 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:22:18.373 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:22:22.286 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:22:23.335 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:126
+1:S 11 Aug 2022 12:22:23.342 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:22:23.348 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:22:23.350 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:22:23.358 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:22:23.361 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:22:23.365 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:22:23.367 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:22:23.374 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:22:23.377 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:22:27.317 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:22:28.377 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:140
+1:S 11 Aug 2022 12:22:28.384 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:22:28.387 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:22:28.390 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:22:28.398 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:22:28.402 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:22:28.406 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:22:28.409 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:22:28.415 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:22:28.418 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:22:32.349 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:22:33.418 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:140
+1:S 11 Aug 2022 12:22:33.423 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:22:33.427 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:22:33.429 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:22:33.439 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:22:33.443 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:22:33.448 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:22:33.451 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:22:33.456 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:22:33.459 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:22:37.382 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:22:38.466 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:154
+1:S 11 Aug 2022 12:22:38.472 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:22:38.476 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:22:38.478 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:22:38.526 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:22:38.532 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:22:38.535 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:22:38.538 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:22:38.544 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:22:38.546 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:22:42.462 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:22:43.502 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:154
+1:S 11 Aug 2022 12:22:43.507 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:22:43.510 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:22:43.512 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:22:43.522 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:22:43.525 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:22:43.528 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:22:43.530 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:22:43.536 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:22:43.538 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:22:47.493 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:22:48.544 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:168
+1:S 11 Aug 2022 12:22:48.549 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:22:48.552 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:22:48.555 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:22:48.602 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:22:48.605 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:22:48.608 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:22:48.611 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:22:48.617 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:22:48.620 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:22:52.532 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:22:53.582 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:168
+1:S 11 Aug 2022 12:22:53.587 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:22:53.590 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:22:53.592 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:22:53.603 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:22:53.607 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:22:53.610 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:22:53.612 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:22:53.618 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:22:53.620 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:22:57.562 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:22:58.626 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:182
+1:S 11 Aug 2022 12:22:58.631 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:22:58.634 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:22:58.636 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:22:58.685 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:22:58.689 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:22:58.691 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:22:58.694 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:22:58.702 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:22:58.704 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:23:02.614 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:23:03.667 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:182
+1:S 11 Aug 2022 12:23:03.672 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:23:03.675 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:23:03.677 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:23:03.726 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:23:03.729 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:23:03.732 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:23:03.735 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:23:03.741 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:23:03.744 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:23:07.655 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:23:08.714 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:196
+1:S 11 Aug 2022 12:23:08.719 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:23:08.722 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:23:08.724 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:23:08.769 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:23:08.773 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:23:08.777 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:23:08.780 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:23:08.788 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:23:08.791 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:23:12.702 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:23:13.755 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:196
+1:S 11 Aug 2022 12:23:13.760 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:23:13.762 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:23:13.764 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:23:13.811 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:23:13.815 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:23:13.818 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:23:13.820 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:23:13.829 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:23:13.832 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:23:17.745 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:23:18.797 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:210
+1:S 11 Aug 2022 12:23:18.802 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:23:18.806 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:23:18.808 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:23:18.819 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:23:18.822 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:23:18.826 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:23:18.828 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:23:18.836 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:23:18.838 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:23:22.771 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:23:23.830 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:210
+1:S 11 Aug 2022 12:23:23.835 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:23:23.839 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:23:23.842 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:23:23.853 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:23:23.858 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:23:23.861 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:23:23.864 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:23:23.871 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:23:23.874 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:23:27.789 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:23:28.857 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:224
+1:S 11 Aug 2022 12:23:28.862 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:23:28.866 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:23:28.868 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:23:28.913 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:23:28.917 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:23:28.920 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:23:28.922 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:23:28.929 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:23:28.931 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:23:32.839 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:23:33.898 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:224
+1:S 11 Aug 2022 12:23:33.909 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:23:33.914 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:23:33.918 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:23:33.928 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:23:33.935 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:23:33.942 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:23:33.950 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:23:33.964 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:23:33.971 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:23:37.872 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:23:38.963 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:238
+1:S 11 Aug 2022 12:23:38.968 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:23:38.971 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:23:38.973 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:23:39.022 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:23:39.027 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:23:39.030 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:23:39.033 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:23:39.040 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:23:39.044 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:23:42.947 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:23:44.995 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:238
+1:S 11 Aug 2022 12:23:45.000 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:23:45.003 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:23:45.006 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:23:45.053 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:23:45.056 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:23:45.061 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:23:45.064 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:23:45.070 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:23:45.072 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:23:47.978 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:23:50.036 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:252
+1:S 11 Aug 2022 12:23:50.043 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:23:50.047 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:23:50.052 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:23:50.098 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:23:50.102 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:23:50.105 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:23:50.108 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:23:50.114 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:23:50.116 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:23:53.025 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:23:55.072 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:252
+1:S 11 Aug 2022 12:23:55.076 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:23:55.080 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:23:55.083 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:23:55.128 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:23:55.131 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:23:55.134 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:23:55.136 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:23:55.142 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:23:55.145 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:23:58.052 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:24:00.106 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:266
+1:S 11 Aug 2022 12:24:00.110 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:24:00.113 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:24:00.115 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:24:00.124 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:24:00.129 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:24:00.132 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:24:00.135 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:24:00.141 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:24:00.143 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:24:03.078 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:24:05.141 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:266
+1:S 11 Aug 2022 12:24:05.148 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:24:05.153 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:24:05.155 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:24:05.209 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:24:05.216 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:24:05.223 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:24:05.226 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:24:05.234 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:24:05.237 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:24:08.136 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:24:10.178 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:280
+1:S 11 Aug 2022 12:24:10.183 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:24:10.186 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:24:10.188 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:24:10.234 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:24:10.238 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:24:10.241 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:24:10.244 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:24:10.251 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:24:10.254 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:24:13.165 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:24:15.208 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:280
+1:S 11 Aug 2022 12:24:15.213 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:24:15.216 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:24:15.218 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:24:15.264 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:24:15.267 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:24:15.271 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:24:15.273 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:24:15.279 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:24:15.282 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:24:18.187 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:24:20.243 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:294
+1:S 11 Aug 2022 12:24:20.248 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:24:20.252 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:24:20.254 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:24:20.262 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:24:20.265 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:24:20.268 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:24:20.271 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:24:20.277 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:24:20.280 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:24:23.213 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:24:25.279 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:294
+1:S 11 Aug 2022 12:24:25.283 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:24:25.287 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:24:25.289 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:24:25.335 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:24:25.338 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:24:25.341 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:24:25.343 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:24:25.347 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:24:25.349 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:24:28.260 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:24:30.317 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:308
+1:S 11 Aug 2022 12:24:30.321 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:24:30.324 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:24:30.326 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:24:30.336 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:24:30.339 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:24:30.341 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:24:30.343 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:24:30.349 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:24:30.351 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:24:33.286 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:24:35.350 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:308
+1:S 11 Aug 2022 12:24:35.354 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:24:35.357 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:24:35.359 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:24:35.404 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:24:35.408 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:24:35.410 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:24:35.413 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:24:35.418 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:24:35.421 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:24:38.325 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:24:40.384 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:322
+1:S 11 Aug 2022 12:24:40.388 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:24:40.391 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:24:40.393 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:24:40.439 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:24:40.443 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:24:40.445 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:24:40.448 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:24:40.455 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:24:40.457 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:24:43.365 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:24:45.425 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:322
+1:S 11 Aug 2022 12:24:45.429 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:24:45.432 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:24:45.434 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:24:45.479 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:24:45.483 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:24:45.486 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:24:45.489 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:24:45.496 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:24:45.498 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:24:48.402 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:24:50.462 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:336
+1:S 11 Aug 2022 12:24:50.466 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:24:50.468 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:24:50.470 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:24:50.484 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:24:50.487 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:24:50.490 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:24:50.492 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:24:50.498 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:24:50.500 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:24:53.429 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:24:55.499 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:336
+1:S 11 Aug 2022 12:24:55.503 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:24:55.506 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:24:55.508 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:24:55.520 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:24:55.523 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:24:55.526 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:24:55.528 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:24:55.537 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:24:55.540 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:24:58.457 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:25:00.531 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:350
+1:S 11 Aug 2022 12:25:00.535 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:25:00.538 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:25:00.540 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:25:00.548 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:25:00.552 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:25:00.554 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:25:00.556 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:25:00.561 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:25:00.563 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:25:03.486 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:25:05.570 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:350
+1:S 11 Aug 2022 12:25:05.573 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:25:05.576 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:25:05.578 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:25:05.585 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:25:05.588 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:25:05.591 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:25:05.593 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:25:05.600 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:25:05.602 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:25:08.517 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:25:10.605 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:364
+1:S 11 Aug 2022 12:25:10.609 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:25:10.613 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:25:10.615 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:25:10.624 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:25:10.628 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:25:10.631 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:25:10.633 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:25:10.642 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:25:10.646 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:25:13.546 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:25:15.635 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:364
+1:S 11 Aug 2022 12:25:15.640 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:25:15.643 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:25:15.645 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:25:15.654 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:25:15.657 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:25:15.660 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:25:15.662 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:25:15.666 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:25:15.668 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:25:18.574 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:25:20.668 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:378
+1:S 11 Aug 2022 12:25:20.673 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:25:20.676 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:25:20.678 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:25:20.688 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:25:20.692 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:25:20.695 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:25:20.697 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:25:20.705 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:25:20.708 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:25:23.608 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:25:25.702 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:378
+1:S 11 Aug 2022 12:25:25.707 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:25:25.709 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:25:25.711 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:25:25.718 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:25:25.721 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:25:25.724 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:25:25.726 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:25:25.733 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:25:25.735 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:25:28.643 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:25:30.740 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:392
+1:S 11 Aug 2022 12:25:30.746 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:25:30.749 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:25:30.751 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:25:30.758 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:25:30.762 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:25:30.766 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:25:30.769 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:25:30.775 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:25:30.777 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:25:33.685 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:25:35.778 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:392
+1:S 11 Aug 2022 12:25:35.783 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:25:35.786 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:25:35.788 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:25:35.796 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:25:35.801 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:25:35.805 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:25:35.808 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:25:35.815 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:25:35.818 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:25:38.723 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:25:40.814 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:406
+1:S 11 Aug 2022 12:25:40.818 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:25:40.821 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:25:40.823 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:25:40.831 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:25:40.834 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:25:40.836 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:25:40.838 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:25:40.843 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:25:40.845 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:25:43.753 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:25:45.849 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:406
+1:S 11 Aug 2022 12:25:45.853 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:25:45.856 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:25:45.858 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:25:45.866 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:25:45.869 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:25:45.872 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:25:45.875 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:25:45.880 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:25:45.882 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:25:48.789 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:25:50.877 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:420
+1:S 11 Aug 2022 12:25:50.882 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:25:50.885 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:25:50.886 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:25:50.895 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:25:50.898 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:25:50.900 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:25:50.902 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:25:50.909 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:25:50.911 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:25:53.816 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:25:55.910 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:420
+1:S 11 Aug 2022 12:25:55.917 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:25:55.920 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:25:55.922 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:25:55.930 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:25:55.934 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:25:55.938 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:25:55.941 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:25:55.949 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:25:55.951 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:25:58.856 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:26:00.950 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:434
+1:S 11 Aug 2022 12:26:00.954 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:26:00.957 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:26:00.959 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:26:00.967 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:26:00.969 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:26:00.972 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:26:00.975 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:26:00.981 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:26:00.983 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:26:03.887 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:26:05.985 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:434
+1:S 11 Aug 2022 12:26:05.989 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:26:05.992 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:26:05.994 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:26:06.001 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:26:06.004 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:26:06.006 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:26:06.008 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:26:06.015 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:26:06.017 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:26:08.920 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:26:11.014 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:448
+1:S 11 Aug 2022 12:26:11.019 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:26:11.023 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:26:11.025 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:26:11.037 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:26:11.042 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:26:11.045 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:26:11.048 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:26:11.055 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:26:11.057 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:26:13.961 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:26:16.048 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:448
+1:S 11 Aug 2022 12:26:16.052 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:26:16.055 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:26:16.057 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:26:16.066 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:26:16.070 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:26:16.073 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:26:16.076 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:26:16.084 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:26:16.086 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:26:18.991 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:26:21.081 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:462
+1:S 11 Aug 2022 12:26:21.086 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:26:21.090 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:26:21.092 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:26:21.102 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:26:21.106 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:26:21.109 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:26:21.112 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:26:21.119 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:26:21.121 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:26:24.021 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:26:26.120 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:462
+1:S 11 Aug 2022 12:26:26.127 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:26:26.131 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:26:26.134 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:26:26.214 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:26:26.218 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:26:26.220 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:26:26.222 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:26:26.233 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:26:26.235 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:26:29.134 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:26:31.153 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:476
+1:S 11 Aug 2022 12:26:31.158 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:26:31.161 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:26:31.163 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:26:31.173 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:26:31.177 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:26:31.180 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:26:31.182 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:26:31.189 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:26:31.192 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:26:34.159 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:26:36.186 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:476
+1:S 11 Aug 2022 12:26:36.215 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:26:36.222 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:26:36.236 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:26:36.288 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:26:36.292 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:26:36.295 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:26:36.298 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:26:36.305 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:26:36.307 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:26:39.210 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:26:41.237 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:490
+1:S 11 Aug 2022 12:26:41.241 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:26:41.244 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:26:41.245 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:26:41.289 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:26:41.293 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:26:41.297 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:26:41.299 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:26:41.305 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:26:41.307 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:26:44.238 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:26:46.289 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:490
+1:S 11 Aug 2022 12:26:46.295 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:26:46.298 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:26:46.300 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:26:46.344 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:26:46.347 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:26:46.350 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:26:46.353 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:26:46.359 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:26:46.361 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:26:49.265 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:26:51.316 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:504
+1:S 11 Aug 2022 12:26:51.321 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:26:51.323 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:26:51.326 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:26:51.371 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:26:51.375 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:26:51.378 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:26:51.381 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:26:51.387 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:26:51.389 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:26:54.290 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:26:56.343 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:504
+1:S 11 Aug 2022 12:26:56.348 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:26:56.352 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:26:56.354 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:26:56.399 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:26:56.403 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:26:56.407 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:26:56.411 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:26:56.419 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:26:56.421 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:26:59.322 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:27:01.374 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:518
+1:S 11 Aug 2022 12:27:01.378 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:27:01.382 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:27:01.384 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:27:01.393 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:27:01.397 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:27:01.400 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:27:01.403 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:27:01.408 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:27:01.410 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:27:04.348 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:27:06.403 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:518
+1:S 11 Aug 2022 12:27:06.407 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:27:06.410 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:27:06.412 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:27:06.459 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:27:06.462 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:27:06.464 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:27:06.467 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:27:06.474 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:27:06.477 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:27:09.380 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:27:11.432 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:532
+1:S 11 Aug 2022 12:27:11.436 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:27:11.439 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:27:11.441 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:27:11.487 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:27:11.491 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:27:11.493 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:27:11.495 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:27:11.503 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:27:11.506 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:27:14.407 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:27:16.471 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:532
+1:S 11 Aug 2022 12:27:16.475 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:27:16.479 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:27:16.481 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:27:16.526 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:27:16.531 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:27:16.533 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:27:16.536 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:27:16.540 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:27:16.542 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:27:19.448 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:27:21.503 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:546
+1:S 11 Aug 2022 12:27:21.508 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:27:21.511 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:27:21.513 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:27:21.521 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:27:21.524 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:27:21.526 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:27:21.528 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:27:21.534 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:27:21.536 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:27:24.472 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:27:26.537 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:546
+1:S 11 Aug 2022 12:27:26.541 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:27:26.544 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:27:26.546 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:27:26.555 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:27:26.559 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:27:26.561 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:27:26.564 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:27:26.572 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:27:26.575 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:27:29.495 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:27:31.575 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:560
+1:S 11 Aug 2022 12:27:31.580 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:27:31.583 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:27:31.585 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:27:31.631 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:27:31.635 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:27:31.638 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:27:31.640 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:27:31.647 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:27:31.650 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:27:34.553 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:27:36.603 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:560
+1:S 11 Aug 2022 12:27:36.608 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:27:36.612 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:27:36.615 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:27:36.623 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:27:36.627 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:27:36.629 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:27:36.632 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:27:36.640 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:27:36.643 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:27:39.573 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:27:41.634 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:574
+1:S 11 Aug 2022 12:27:41.639 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:27:41.642 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:27:41.644 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:27:41.689 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:27:41.692 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:27:41.695 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:27:41.699 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:27:41.709 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:27:41.711 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:27:44.612 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:27:46.669 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:574
+1:S 11 Aug 2022 12:27:46.674 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:27:46.676 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:27:46.678 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:27:46.723 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:27:46.727 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:27:46.729 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:27:46.731 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:27:46.736 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:27:46.738 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:27:49.644 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:27:51.698 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:588
+1:S 11 Aug 2022 12:27:51.702 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:27:51.705 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:27:51.707 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:27:51.716 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:27:51.719 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:27:51.722 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:27:51.725 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:27:51.731 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:27:51.733 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:27:54.664 . 0 clients connected (0 replicas), 4517232 bytes in use
+1:S 11 Aug 2022 12:27:56.725 * Full resync from master: bb2b2418be6fdd382e873470e5e50d2aec8b469e:588
+1:S 11 Aug 2022 12:27:56.730 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+1:S 11 Aug 2022 12:27:56.733 * MASTER <-> REPLICA sync: Flushing old data
+1:S 11 Aug 2022 12:27:56.735 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 11 Aug 2022 12:27:56.781 # Failed trying to load the MASTER synchronization DB from disk: No such file or directory
+1:S 11 Aug 2022 12:27:56.785 * Reconnecting to MASTER redis-master-sentinel:6379 after failure
+1:S 11 Aug 2022 12:27:56.787 * MASTER <-> REPLICA sync started
+1:S 11 Aug 2022 12:27:56.790 * Non blocking connect for SYNC fired the event.
+1:S 11 Aug 2022 12:27:56.796 * Master replied to PING, replication can continue...
+1:S 11 Aug 2022 12:27:56.798 * Partial resynchronization not possible (no cached master)
+1:S 11 Aug 2022 12:27:59.701 . 0 clients connected (0 replicas), 4517232 bytes in use
