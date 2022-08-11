@@ -5,6 +5,7 @@
 
     <modules>
         <module>dss</module>
+        <module>api</module>
     </modules>
 
     <parent>
@@ -34,6 +35,11 @@
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>dss</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>api</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
