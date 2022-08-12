@@ -1,5 +1,9 @@
 version: '3.8'
 
+networks:
+  demo:
+    external: true
+
 services:
   redis-master-sentinel:
     build:
@@ -21,7 +25,8 @@ services:
       - "net.ipv4.tcp_max_syn_backlog=65535"
       - "net.core.somaxconn=65535"
     networks:
-      - ${GLOBAL_NETWORK:-redis_sentinel}
+      demo:
+        ipv4_address: 172.25.0.100
 
   redis-slave1-sentinel:
     build:
@@ -47,7 +52,8 @@ services:
       - "net.ipv4.tcp_max_syn_backlog=65535"
       - "net.core.somaxconn=65535"
     networks:
-      - ${GLOBAL_NETWORK:-redis_sentinel}
+      demo:
+        ipv4_address: 172.25.0.101
 
   redis-slave2-sentinel:
     build:
@@ -73,7 +79,8 @@ services:
       - "net.ipv4.tcp_max_syn_backlog=65535"
       - "net.core.somaxconn=65535"
     networks:
-      - ${GLOBAL_NETWORK:-redis_sentinel}
+      demo:
+        ipv4_address: 172.25.0.102
 
   redis-sentinel1:
     build:
@@ -101,7 +108,8 @@ services:
       - "net.ipv4.tcp_max_syn_backlog=65535"
       - "net.core.somaxconn=65535"
     networks:
-      - ${GLOBAL_NETWORK:-redis_sentinel}
+      demo:
+        ipv4_address: 172.25.0.103
 
   redis-sentinel2:
     build:
@@ -129,7 +137,8 @@ services:
       - "net.ipv4.tcp_max_syn_backlog=65535"
       - "net.core.somaxconn=65535"
     networks:
-      - ${GLOBAL_NETWORK:-redis_sentinel}
+      demo:
+        ipv4_address: 172.25.0.104
 
   redis-sentinel3:
     build:
@@ -157,4 +166,5 @@ services:
       - "net.ipv4.tcp_max_syn_backlog=65535"
       - "net.core.somaxconn=65535"
     networks:
-      - ${GLOBAL_NETWORK:-redis_sentinel}
+      demo:
+        ipv4_address: 172.25.0.105
