@@ -7,6 +7,15 @@ spring:
   config:
     activate:
       on-profile: dev
+kafka-config:
+  bootstrap-servers: 172.25.0.91:19092,172.25.0.92:29092,172.25.0.93:39092
+  client-id: JULIAN_DEV_DSS
+  group-id: DSS_JULIAN_DEV
+  auto-offset-reset: latest
+  concurrency-level: 5
+  commit-interval-ms: 10000
+  dss-api-topic: stream_dss-reqreply_api
+  api-dss-topic: reqreply_api-stream_dss
 server:
   port: 8081
 logging:
