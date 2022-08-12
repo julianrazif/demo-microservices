@@ -8,7 +8,7 @@ spring:
     activate:
       on-profile: dev
 kafka-config:
-  bootstrap-servers: localhost:19092,localhost:29092,localhost:39092
+  bootstrap-servers: 172.25.0.91:19092,172.25.0.92:29092,172.25.0.93:39092
   client-id: JULIAN_DEV_DSS
   group-id: DSS_JULIAN_DEV
   auto-offset-reset: latest

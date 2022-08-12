@@ -38,3 +38,9 @@ build/
 /docker/redis-sentinel/redis-master-sentinel/
 /docker/redis-sentinel/redis-slave1-sentinel/
 /docker/redis-sentinel/redis-slave2-sentinel/
+/docker/kafka-cluster/kafdrop-data/
+/docker/kafka-cluster/kafka-data1/
+/docker/kafka-cluster/kafka-data2/
+/docker/kafka-cluster/kafka-data3/
+/docker/kafka-cluster/zk-data/
+/docker/kafka-cluster/zk-txn-logs/

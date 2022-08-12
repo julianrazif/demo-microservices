@@ -5,6 +5,9 @@
 * [Official docker for kafdrop] (https://github.com/obsidiandynamics/kafdrop)
 * [Bitnami docker for redis-sentinel] (https://github.com/bitnami/containers/blob/main/bitnami/redis-sentinel/docker-compose.yml)
 
+## Docker
+* create user defined network on docker, run "docker network create --gateway 172.25.0.1 --subnet 172.25.0.0/16 demo" command
+
 ## Kafka
 * change directory to /docker/kafka-cluster
 * run "docker-compose up" command

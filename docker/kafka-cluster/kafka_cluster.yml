@@ -1,5 +1,9 @@
 version: '3.8'
 
+networks:
+  demo:
+    external: true
+
 services:
   zookeeper:
     image: confluentinc/cp-zookeeper:${KAFKA_VERSION:-latest}
@@ -7,6 +11,9 @@ services:
     container_name: zookeeper
     ports:
       - "2181:2181"
+    volumes:
+      - "./zk-data:/var/lib/zookeeper/data"
+      - "./zk-txn-logs:/var/lib/zookeeper/log"
     environment:
       ZOOKEEPER_SERVER_ID: 1
       ZOOKEEPER_CLIENT_PORT: 2181
@@ -15,7 +22,8 @@ services:
       ZOOKEEPER_SYNC_LIMIT: 2
       ZOOKEEPER_SERVERS: zookeeper:2888:3888
     networks:
-      - ${GLOBAL_NETWORK:-kafka}
+      demo:
+        ipv4_address: 172.25.0.90
 
   kafka-broker-1:
     image: confluentinc/cp-kafka:${KAFKA_VERSION}
@@ -25,6 +33,8 @@ services:
       - zookeeper
     ports:
       - "19092:19092"
+    volumes:
+      - "./kafka-data1:/var/lib/kafka/data"
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
@@ -37,7 +47,8 @@ services:
       # KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       # KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
     networks:
-      - ${GLOBAL_NETWORK:-kafka}
+      demo:
+        ipv4_address: 172.25.0.91
 
   kafka-broker-2:
     image: confluentinc/cp-kafka:${KAFKA_VERSION}
@@ -47,6 +58,8 @@ services:
       - zookeeper
     ports:
       - "29092:29092"
+    volumes:
+      - "./kafka-data2:/var/lib/kafka/data"
     environment:
       KAFKA_BROKER_ID: 2
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
@@ -59,7 +72,8 @@ services:
       # KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       # KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
     networks:
-      - ${GLOBAL_NETWORK:-kafka}
+      demo:
+        ipv4_address: 172.25.0.92
 
   kafka-broker-3:
     image: confluentinc/cp-kafka:${KAFKA_VERSION}
@@ -69,6 +83,8 @@ services:
       - zookeeper
     ports:
       - "39092:39092"
+    volumes:
+      - "./kafka-data3:/var/lib/kafka/data"
     environment:
       KAFKA_BROKER_ID: 3
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
@@ -81,7 +97,8 @@ services:
       # KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       # KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
     networks:
-      - ${GLOBAL_NETWORK:-kafka}
+      demo:
+        ipv4_address: 172.25.0.93
 
   kafdrop:
     image: obsidiandynamics/kafdrop:latest
@@ -94,9 +111,13 @@ services:
       - kafka-broker-3
     ports:
       - "9000:9000"
+    volumes:
+      - "./kafdrop-data:/var/protobuf_desc"
     environment:
       KAFKA_BROKERCONNECT: kafka-broker-1:9092,kafka-broker-2:9092,kafka-broker-3:9092
-      JVM_OPTS: "-Xms125M -Xmx512M"
+      JVM_OPTS: "-Xms64M -Xmx128M"
       SERVER_SERVLET_CONTEXTPATH: "/"
+      CMD_ARGS: "--message.format=PROTOBUF --protobufdesc.directory=/var/protobuf_desc"
     networks:
-      - ${GLOBAL_NETWORK:-kafka}
+      demo:
+        ipv4_address: 172.25.0.94
