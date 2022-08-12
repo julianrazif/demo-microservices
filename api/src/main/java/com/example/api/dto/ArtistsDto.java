@@ -1,6 +1,5 @@
-package com.example.api.domain;
+package com.example.api.dto;
 
-import com.example.api.dto.DomainObject;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

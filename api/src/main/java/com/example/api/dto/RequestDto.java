@@ -11,6 +11,5 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class RequestDto<T> implements Serializable {
 
-  private String token;
   private T data;
 }

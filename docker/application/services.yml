@@ -1,0 +1,34 @@
+version: '3.8'
+
+networks:
+  demo:
+    external: true
+
+services:
+  dss:
+    image: ${GROUP_ID}/dss:${SERVICE_VERSION:-latest}
+    hostname: dss
+    container_name: dss
+    ports:
+      - "8081:8081"
+    user: root
+    environment:
+      KAFKA-CONFIG_BOOTSTRAP-SERVERS: 172.25.0.91:19092,172.25.0.92:29092,172.25.0.93:39092
+      SERVER_PORT: 8081
+    networks:
+      demo:
+        ipv4_address: 172.25.0.81
+
+  api:
+    image: ${GROUP_ID}/api:${SERVICE_VERSION:-latest}
+    hostname: api
+    container_name: api
+    ports:
+      - "8082:8082"
+    user: root
+    environment:
+      KAFKA-CONFIG_BOOTSTRAP-SERVERS: 172.25.0.91:19092,172.25.0.92:29092,172.25.0.93:39092
+      SERVER_PORT: 8082
+    networks:
+      demo:
+        ipv4_address: 172.25.0.82
