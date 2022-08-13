@@ -7,6 +7,31 @@ spring:
   config:
     activate:
       on-profile: dev
+  sql:
+    init:
+      mode: never
+      platform: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    open-in-view: false
+app:
+  datasource:
+    url: jdbc:postgres://satao.db.elephantsql.com/bnipjlax?schema=public
+    username: bnipjlax
+    password: HlhwqSLHer4_zHXBaajJJrJQog6a4zs4
+    connection-timeout: 30000
+    idle-timeout: 300000
+    max-lifetime: 900000
+    maximum-pool-size: 10
+    minimum-idle: 10
+    pool-name: dss
+    connection-test-query: select 1
+    auto-commit: false
 kafka-config:
   bootstrap-servers: 172.25.0.91:19092,172.25.0.92:29092,172.25.0.93:39092
   client-id: JULIAN_DEV_DSS
