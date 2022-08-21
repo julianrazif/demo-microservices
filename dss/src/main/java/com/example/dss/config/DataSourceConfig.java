@@ -20,6 +20,7 @@ public class DataSourceConfig {
 
   @Primary
   @Bean(name = "dssDataSource")
+  @ConfigurationProperties(prefix = "hikari.datasource")
   public HikariDataSource dssDataSource(@Qualifier("dssDataSourceProperties") DataSourceProperties dssDataSourceProperties) {
     return dssDataSourceProperties.initializeDataSourceBuilder().type(HikariDataSource.class).build();
   }

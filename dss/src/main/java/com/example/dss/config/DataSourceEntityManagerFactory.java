@@ -27,8 +27,13 @@ public class DataSourceEntityManagerFactory {
 
   protected Map<String, String> hibernateProperties() {
     final Map<String, String> prop = new HashMap<>();
-    prop.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
-    prop.put("hibernate.ddl-auto", "none");
+    prop.put("hibernate.dialect", "org.hibernate.dialect.MariaDBDialect");
+    prop.put("hibernate.format_sql", "true");
+    prop.put("hibernate.generate_statistics", "true");
+    prop.put("hibernate.cache.use_second_level_cache", "true");
+    prop.put("hibernate.cache.use_query_cache", "true");
+    prop.put("hibernate.cache.region.factory_class", "org.hibernate.cache.ehcache.EhCacheRegionFactory");
+    prop.put("hibernate.cache.provider_class", "net.sf.ehcache.hibernate.EhCacheProvider");
     return prop;
   }
 
