@@ -1,19 +1,28 @@
 package com.example.dss.datasource.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-@Setter
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.TRANSACTIONAL)
+@Cacheable
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
+@Setter
 @Entity
-@Table(name = "artists", schema = "master")
+@Table(name = "artists", schema = "public")
+@SQLDelete(sql = "update Artists set is_deleted=true where id=?")
+@Where(clause = "is_deleted=false")
 public class Artists implements Serializable {
-
-  private static final long serialVersionUID = 1L;
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,4 +45,7 @@ public class Artists implements Serializable {
 
   @Column(name = "sampleURL", nullable = false)
   private String sampleURL;
+
+  @Column(name = "is_deleted", nullable = false)
+  private boolean isDeleted;
 }
