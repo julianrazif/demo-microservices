@@ -10,25 +10,39 @@ spring:
   sql:
     init:
       mode: never
-      platform: postgres
   jpa:
+    generate-ddl: false
     hibernate:
       ddl-auto: none
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
     open-in-view: false
+    properties:
+      hibernate:
+        connection:
+          isolation: 2
+        jdbc:
+          batch_size: 10
+      javax:
+        persistence:
+          sharedCache:
+            mode: ENABLE_SELECTIVE
 app:
   datasource:
+    driver-class-name: org.postgresql.Driver
     url: jdbc:postgres://satao.db.elephantsql.com/bnipjlax?schema=public
+    username: bnipjlax
+    password: HlhwqSLHer4_zHXBaajJJrJQog6a4zs4
+hikari:
+  datasource:
+    jdbc-url: jdbc:postgres://satao.db.elephantsql.com/bnipjlax?schema=public
+    driver-class-name: org.postgresql.Driver
     username: bnipjlax
     password: HlhwqSLHer4_zHXBaajJJrJQog6a4zs4
     connection-timeout: 30000
     idle-timeout: 300000
     max-lifetime: 900000
-    maximum-pool-size: 10
-    minimum-idle: 10
+    maximum-pool-size: 20
+    minimum-idle: 4
     pool-name: dss
     connection-test-query: select 1
     auto-commit: false
@@ -45,4 +59,9 @@ server:
   port: 8081
 logging:
   level:
-    org.springframework: INFO
+    org.springframework: DEBUG
+    org.hibernate.type: DEBUG
+    org.hibernate.stat: DEBUG
+    com.zaxxer.hikari.HikariConfig: DEBUG
+    com.zaxxer.hikari: DEBUG
+    net.sf.ehcache: DEBUG
