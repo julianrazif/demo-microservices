@@ -1,0 +1,31 @@
+---
+sentinelServersConfig:
+  idleConnectionTimeout: 10000
+  connectTimeout: 60000
+  timeout: 6000
+  retryAttempts: 150
+  retryInterval: 1500
+  failedSlaveReconnectionInterval: 3000
+  failedSlaveCheckInterval: 60000
+  password: julianraziffigaro
+  subscriptionsPerConnection: 5
+  clientName: api-session
+  loadBalancer: !<org.redisson.connection.balancer.RoundRobinLoadBalancer> {}
+  subscriptionConnectionMinimumIdleSize: 1
+  subscriptionConnectionPoolSize: 50
+  slaveConnectionMinimumIdleSize: 1
+  slaveConnectionPoolSize: 64
+  masterConnectionMinimumIdleSize: 1
+  masterConnectionPoolSize: 64
+  readMode: "SLAVE"
+  subscriptionMode: "SLAVE"
+  sentinelAddresses:
+    - "redis://172.25.0.103:26379"
+    - "redis://172.25.0.104:26379"
+    - "redis://172.25.0.105:26379"
+  masterName: "mymaster"
+  database: 0
+threads: 16
+nettyThreads: 32
+codec: !<org.redisson.codec.MarshallingCodec> {}
+transportMode: "NIO"
